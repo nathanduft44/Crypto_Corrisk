@@ -3,7 +3,7 @@
 ## Overview
 
 Crypto currencies have recently been in the spotlight in today's financial world. Seeing major adoption and capital investments pooring into the markets from financial institutions and retail investors all over the world.
-Since Bitcoins creation in 2009, we've seen a substantial amount of digital assets being created and added to the market. These assets have gone through periods of market volatility and price
+Since Bitcoins creation in 2009, we've had a substantial amount of digital assets being created and added to the market. These assets have gone through periods of market volatility and price
 movements that have been correlated with Bitcoin's.
 
 * Bitcoin (BTC)
@@ -18,14 +18,14 @@ movements that have been correlated with Bitcoin's.
 * Cardano (ADA)
 * Doge Coin
 
-For this project, we've collected data from the time periods with the highest volatility. The start of the first bull run in 2016, to the current bull run in 2021.
+For this project, we've collected data for the time periods with the highest volatility. The start of the first bull run in 2016, to the current 2021 bull run.
 
 ## Objective
 We want to create a bridge between legacy financial risk analysis with on-chain metrics. 
 To reach our goal, we're creating a mechanism for users to calculate risk in potential investment opportunities within these selected coins.
-Allowing users to make educated and well-informed decisions by evaluating historical price movements from the data we've collected and provided in a user-friendly application.
+This will allow users to make educated and well-informed decisions by evaluating historical price movements from the data provided in a user-friendly application.
 
-# Requirements
+## Requirements
 
 ## Navigating & How-to-Use
 
@@ -36,6 +36,8 @@ Allowing users to make educated and well-informed decisions by evaluating histor
 * How do the potential ranges of portfolio growth compare between [] via 10 year Monte carlo simulations
 
 # Installation
-
+    $ git clone git@github.com:nathanduft44/Crypto_Corrisk.git
+    
+    
 # License
-
+Licensed under the [MIT License] (LICENSE)
