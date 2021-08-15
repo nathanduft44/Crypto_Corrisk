@@ -2,32 +2,35 @@
 
 ## Overview
 
-Crypto currencies have recently been in the spotlight in today's financial world. Seeing major adoption and capital investments pooring into the markets from financial institutions and retail investors all over the world.
-Since Bitcoins creation in 2009, we've had a substantial amount of digital assets being created and added to the market. These assets have gone through periods of market volatility and price
-movements that have been correlated with Bitcoin's.
+Crypto currencies have recently been in the spotlight in today's financial world. We're seeing major adoption and capital investments pooring into the markets from financial institutions and retail investors all over the world. Since Bitcoin's creation in 2009, there are now a whopping 11,257 cryptocurrencies in the market!
+
+We've chosen our top 10 coins to evaluate and provide historical price correlation in comparison to Bitcoin's. For this project, we've collected data for the time periods with the highest volatility; the start of the first bull run in 2016, to the current 2021 bull run.
 
 * Bitcoin (BTC)
 * Zcash (ZEC)
 * Ethereum (ETH)
 * Dash 
 * XRP
-* Lite Coin (LTC)
+* Siacoin (SC)
 * Stellar Lumen (XLM)
 * Tether (USDT)
-* Waves
+* Lisk (LSK)
 * Cardano (ADA)
 * Doge Coin
 
-For this project, we've collected data for the time periods with the highest volatility. The start of the first bull run in 2016, to the current 2021 bull run.
-
 ## Objective
 We want to create a bridge between legacy financial risk analysis with on-chain metrics. 
-To reach our goal, we're creating a mechanism for users to calculate risk in potential investment opportunities within these selected coins.
+To reach our goal, we're creating a mechanism for our users to measure potential risk based off our techincal analysis.
 This will allow users to make educated and well-informed decisions by evaluating historical price movements from the data provided in a user-friendly application.
 
 ## Requirements
 
 ## Navigating & How-to-Use
+
+## Steps of Development
+* 1. Using CoinGecko API, we were able to collect historical closing prices and compile them into one dataframe.
+* 2. Calculated the variance and covariance of each coin compared to Bitcoin, finding the Beta.
+* 3. Utilized heatmaps to visually compare the correlation of price movement for each coin.
 
 ## Findings
 * Were the correlations between the top cryptocurrencies by market cap stronger or weaker during months of significant downward price movement? (look at 2017 and 2021 May specifically)
