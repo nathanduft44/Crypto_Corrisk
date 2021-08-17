@@ -4,6 +4,113 @@ import csv
 from pathlib import Path
 import questionary
 
+
+df_2017 = pd.read_csv(
+    Path('2017_data.csv'),
+)
+
+final_2017_df = pd.DataFrame()
+final_2017_df['BTC_Monthly_Close'] = df_2017['price_close']
+final_2017_df['ETH_Monthly_Close'] = df_2017['price_close.1']
+final_2017_df['ITC_Monthly_Close'] = df_2017['price_close.2']
+final_2017_df['USDT_Monthly_Close'] = df_2017['price_close.3']
+final_2017_df['XLM_Monthly_Close'] = df_2017['price_close.4']
+final_2017_df['XRP_Monthly_Close'] = df_2017['price_close.5']
+final_2017_df['ZEC_Monthly_Close'] = df_2017['price_close.6']
+final_2017_df['DASH_Monthly_Close'] = df_2017['price_close.7']
+
+
+monthly_2017_returns = pd.DataFrame()
+
+monthly_2017_returns['BTC'] = final_2017_df['BTC_Monthly_Close'].pct_change().dropna()
+monthly_2017_returns['ETH']= final_2017_df['ETH_Monthly_Close'].pct_change().dropna()
+monthly_2017_returns['ITC'] = final_2017_df['ITC_Monthly_Close'].pct_change().dropna()
+monthly_2017_returns['USDT'] = final_2017_df['USDT_Monthly_Close'].pct_change().dropna()
+monthly_2017_returns['XLM'] = final_2017_df['XLM_Monthly_Close'].pct_change().dropna()
+monthly_2017_returns['XRP'] = final_2017_df['XRP_Monthly_Close'].pct_change().dropna()
+monthly_2017_returns['ZEC'] = final_2017_df['ZEC_Monthly_Close'].pct_change().dropna()
+monthly_2017_returns['DASH'] = final_2017_df['DASH_Monthly_Close'].pct_change().dropna()
+
+market_var_2017 = final_2017_df['BTC_Monthly_Close'].var()
+market_cov_2017 = final_2017_df['BTC_Monthly_Close'].cov(final_2017_df['BTC_Monthly_Close'])
+
+eth_cov_2017 = monthly_2017_returns['ETH'].cov(monthly_2017_returns['BTC'])
+itc_cov_2017 = monthly_2017_returns['ITC'].cov(monthly_2017_returns['BTC'])
+usdt_cov_2017 = monthly_2017_returns['USDT'].cov(monthly_2017_returns['BTC'])
+xlm_cov_2017 = monthly_2017_returns['XLM'].cov(monthly_2017_returns['BTC'])
+xrp_cov_2017 = monthly_2017_returns['XRP'].cov(monthly_2017_returns['BTC'])
+zec_cov_2017 = monthly_2017_returns['ZEC'].cov(monthly_2017_returns['BTC'])
+dash_cov_2017 = monthly_2017_returns['DASH'].cov(monthly_2017_returns['BTC'])
+
+btc_beta_2017 = market_cov_2017 / market_var_2017
+eth_beta_2017 = eth_cov_2017 / market_var_2017
+itc_beta_2017 = itc_cov_2017 / market_var_2017
+usdt_beta_2017 = usdt_cov_2017 / market_var_2017
+xlm_beta_2017= xlm_cov_2017 / market_var_2017
+xrp_beta_2017 = xrp_cov_2017 / market_var_2017
+zec_beta_2017 = zec_cov_2017 / market_var_2017
+dash_beta_2017 = dash_cov_2017 / market_var_2017
+
+# ----------------------------------------------------------
+
+df_2018 = pd.read_csv(
+    Path('2018_data.csv'),
+)
+
+final_2018_df = pd.DataFrame()
+final_2018_df['BTC_Monthly_Close'] = df_2018['price_close']
+final_2018_df['ETH_Monthly_Close'] = df_2018['price_close.1']
+final_2018_df['ITC_Monthly_Close'] = df_2018['price_close.2']
+final_2018_df['USDT_Monthly_Close'] = df_2018['price_close.3']
+final_2018_df['XLM_Monthly_Close'] = df_2018['price_close.4']
+final_2018_df['XRP_Monthly_Close'] = df_2018['price_close.5']
+final_2018_df['ZEC_Monthly_Close'] = df_2018['price_close.6']
+final_2018_df['DASH_Monthly_Close'] = df_2018['price_close.7']
+final_2018_df['ADA_Monthly_Close'] = df_2018['price_close.8']
+
+
+monthly_2018_returns = pd.DataFrame()
+
+monthly_2018_returns['BTC'] = final_2018_df['BTC_Monthly_Close'].pct_change().dropna()
+monthly_2018_returns['ETH']= final_2018_df['ETH_Monthly_Close'].pct_change().dropna()
+monthly_2018_returns['ITC'] = final_2018_df['ITC_Monthly_Close'].pct_change().dropna()
+monthly_2018_returns['ADA'] = final_2018_df['ADA_Monthly_Close'].pct_change().dropna()
+monthly_2018_returns['XLM'] = final_2018_df['XLM_Monthly_Close'].pct_change().dropna()
+monthly_2018_returns['XRP'] = final_2018_df['XRP_Monthly_Close'].pct_change().dropna()
+monthly_2018_returns['ZEC'] = final_2018_df['ZEC_Monthly_Close'].pct_change().dropna()
+monthly_2018_returns['USDT'] = final_2018_df['USDT_Monthly_Close'].pct_change().dropna()
+monthly_2018_returns['DASH'] = final_2018_df['DASH_Monthly_Close'].pct_change().dropna()
+
+market_var_2018 = final_2018_df['BTC_Monthly_Close'].var()
+market_cov_2018 = final_2018_df['BTC_Monthly_Close'].cov(final_2018_df['BTC_Monthly_Close'])
+
+eth_cov_2018 = monthly_2018_returns['ETH'].cov(monthly_2018_returns['BTC'])
+itc_cov_2018 = monthly_2018_returns['ITC'].cov(monthly_2018_returns['BTC'])
+ada_cov_2018 = monthly_2018_returns['ADA'].cov(monthly_2018_returns['BTC'])
+xlm_cov_2018 = monthly_2018_returns['XLM'].cov(monthly_2018_returns['BTC'])
+xrp_cov_2018 = monthly_2018_returns['XRP'].cov(monthly_2018_returns['BTC'])
+zec_cov_2018 = monthly_2018_returns['ZEC'].cov(monthly_2018_returns['BTC'])
+usdt_cov_2018 = monthly_2018_returns['USDT'].cov(monthly_2018_returns['BTC'])
+dash_cov_2018 = monthly_2018_returns['DASH'].cov(monthly_2018_returns['BTC'])
+
+btc_beta_2018 = market_cov_2018 / market_var_2018
+eth_beta_2018 = eth_cov_2018 / market_var_2018
+itc_beta_2018 = itc_cov_2018 / market_var_2018
+ada_beta_2018 = ada_cov_2018 / market_var_2018
+xlm_beta_2018= xlm_cov_2018 / market_var_2018
+xrp_beta_2018 = xrp_cov_2018 / market_var_2018
+zec_beta_2018 = zec_cov_2018 / market_var_2018
+usdt_beta_2018 = usdt_cov_2018 / market_var_2018
+dash_beta_2018 = dash_cov_2018 / market_var_2018
+
+
+
+
+
+
+
+
+# ---------------------------------------------------------------------------
 df_2019 = pd.read_csv(
     Path('2019_data.csv')
 ).set_index('Month')
@@ -147,17 +254,17 @@ zec_beta_2020 = zec_cov_2020 / market_var_2020
 sc_beta_2020 = sc_cov_2020 / market_var_2020
 usdt_beta_2020 = usdt_cov_2020 / market_var_2020
 dash_beta_2020 = dash_cov_2020 / market_var_2020
+# -----------------------------------------------------
 
 
 
-
-choice = questionary.select("choose:", choices=["2017","2018","2019","2020"]).ask()
+choice = questionary.select("choose the year:", choices=["2017","2018","2019","2020"]).ask()
 if choice =="2019":    
-    choice_2019 = questionary.select("choose:", choices=('market_var','btc','eth','ltc', 'ada','xrp','xlm','lisk','waves','zec','sc','usdt','dash','doge')).ask()
+    choice_2019 = questionary.select("choose the coin:", choices=('market_var','btc','eth','ltc', 'ada','xrp','xlm','lisk','waves','zec','sc','usdt','dash','doge')).ask()
     if choice_2019== 'market_var':
-        print(market_var_2019)
+        print(f"Market varianve is:{market_var_2019}")
     elif choice_2019 == "btc" :
-         print(market_cov_2019,btc_beta_2019)
+         print(f"BTC covariance and beta are:{market_cov_2019,btc_beta_2019}")
     elif choice_2019 == "eth":
          print(f"ETH covariance and beta are:{eth_cov_2019,eth_beta_2019}")    
     elif choice_2019 == "ltc":
@@ -184,32 +291,80 @@ if choice =="2019":
          print(f"DOGE covariance and beta are:{doge_cov_2019,dash_beta_2019}")
 #------------------------------------------------------------  
 elif choice == "2020":
-    choice_2020 = questionary.select("choose:", choices=('market_var','btc','eth','ltc', 'ada','xrp','xlm','lisk','waves','zec','sc','usdt','dash','doge')).ask()
+    choice_2020 = questionary.select("choosethe coin:", choices=('market_var','btc','eth','ltc', 'ada','xrp','xlm','lisk','waves','zec','sc','usdt','dash','doge')).ask()
 
     if choice_2020== 'market_var':
           print(market_var_2020)
     elif choice_2020 == "btc" :
-          print(market_cov_2020,btc_beta_2020)
+          print(f"BTC covariance and beta are :{market_cov_2020,btc_beta_2020}")
     elif choice_2020 == "eth":
           print(f"ETH covariance and beta are:{eth_cov_2020,eth_beta_2020}")    
     elif choice_2020 == "ltc":
-          print(itc_cov_2020,itc_beta_2020)
+          print(f"LTC covariance and beta are:{itc_cov_2020,itc_beta_2020}")
     elif choice_2020 == "ada":
-          print(ada_cov_2020,ada_beta_2020)        
+          print(f"ADA covariance and beta are:{ada_cov_2020,ada_beta_2020}")        
     elif choice_2020 == "xrp":
-          print(xrp_cov_2020,xrp_beta_2020)
+          print(f"XRP covariance and beta are:{xrp_cov_2020,xrp_beta_2020}")
     elif choice_2020 == "xlm":
-          print(xlm_cov_2020,xlm_beta_2020)
+          print(f"XLM covariance and beta are:{xlm_cov_2020,xlm_beta_2020}")
     elif choice_2020 == "lisk":
-          print(lisk_cov_2020,lisk_beta_2020)
+          print(f"LISK covariance and beta are:{lisk_cov_2020,lisk_beta_2020}")
     elif choice_2020 == "zec":
-          print(zec_cov_2019,zec_beta_2020)
+          print(f"ZEC covariance and beta are:{zec_cov_2020,zec_beta_2020}")
     elif choice_2020 == "sc":
-          print(sc_cov_2020,sc_beta_2020)
+          print(f"SC covariance and beta are:{sc_cov_2020,sc_beta_2020}")
     elif choice_2020 == "usdt":
-          print(usdt_cov_2020,usdt_beta_2020)    
+          print(f"USDT covariance and beta are:{usdt_cov_2020,usdt_beta_2020}")    
     elif choice_2020 == "dash":
-          print(dash_cov_2020,dash_beta_2020)  
+          print(f"DASH covariance and beta are:{dash_cov_2020,dash_beta_2020}")  
     elif choice_2020 == "doge":
-          print(doge_cov_2020,dash_beta_2020)   
+          print(f"DOGE covariance and beta are:{doge_cov_2020,dash_beta_2020}")   
 
+# --------------------------------------
+
+elif choice == "2018":
+     choice_2018 = questionary.select("choose the coin:", choices=('market_var','btc','eth','ltc', 'ada','xrp','xlm','zec','usdt','dash')).ask()
+
+     if choice_2018== 'market_var':
+        print(market_var_2019)
+     elif choice_2018 == "btc" :
+         print(f"BTC covariance and beta are: {market_cov_2018,btc_beta_2018}")
+     elif choice_2018 == "eth":
+         print(f"ETH covariance and beta are:{eth_cov_2018,eth_beta_2018}")    
+     elif choice_2018 == "ltc":
+         print(f"LTC covariance and beta are:{itc_cov_2018,itc_beta_2018}")
+     elif choice_2018 == "ada":
+         print(f"ADA covariance and beta are:{ada_cov_2018,ada_beta_2018}")        
+     elif choice_2018 == "xrp":
+         print(f"XRP covariance and beta are:{xrp_cov_2018,xrp_beta_2018}")
+     elif choice_2018 == "xlm":
+         print(f"XLM covariance and beta are:{xlm_cov_2018,xlm_beta_2018}")
+     elif choice_2018 == "zec":
+         print(f"ZEC covariance and beta are:{zec_cov_2018,zec_beta_2018}")
+     elif choice_2018 == "usdt":
+         print(f"USDT covariance and beta are:{usdt_cov_2018,usdt_beta_2018}")    
+     elif choice_2018 == "dash":
+         print(f"DASH covariance and beta are:{dash_cov_2018,dash_beta_2018}")  
+#------------------------------------------------------------  
+
+elif choice == "2017":
+     choice_2017 = questionary.select("choose the coin:", choices=('market_var','btc','eth','ltc','xrp','xlm','zec','usdt','dash')).ask()
+
+     if choice_2017== 'market_var':
+        print(market_var_2017)
+     elif choice_2017 == "btc" :
+         print(f"BTC covariance and beta are: {market_cov_2017,btc_beta_2017}")
+     elif choice_2017 == "eth":
+         print(f"ETH covariance and beta are:{eth_cov_2017,eth_beta_2017}")    
+     elif choice_2017 == "ltc":
+         print(f"LTC covariance and beta are:{itc_cov_2017,itc_beta_2017}")
+     elif choice_2017 == "xrp":
+         print(f"XRP covariance and beta are:{xrp_cov_2017,xrp_beta_2017}")
+     elif choice_2017 == "xlm":
+         print(f"XLM covariance and beta are:{xlm_cov_2017,xlm_beta_2017}")
+     elif choice_2017 == "zec":
+         print(f"ZEC covariance and beta are:{zec_cov_2017,zec_beta_2017}")
+     elif choice_2017 == "usdt":
+         print(f"USDT covariance and beta are:{usdt_cov_2017,usdt_beta_2017}")    
+     elif choice_2017 == "dash":
+         print(f"DASH covariance and beta are:{dash_cov_2017,dash_beta_2017}")
