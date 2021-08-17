@@ -291,7 +291,7 @@ if choice =="2019":
          print(f"DOGE covariance and beta are:{doge_cov_2019,dash_beta_2019}")
 #------------------------------------------------------------  
 elif choice == "2020":
-    choice_2020 = questionary.select("choosethe coin:", choices=('market_var','btc','eth','ltc', 'ada','xrp','xlm','lisk','waves','zec','sc','usdt','dash','doge')).ask()
+    choice_2020 = questionary.select("choose the coin:", choices=('market_var','btc','eth','ltc', 'ada','xrp','xlm','lisk','zec','sc','usdt','dash','doge')).ask()
 
     if choice_2020== 'market_var':
           print(market_var_2020)
