@@ -1,0 +1,88 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>std_2020_dev_bar</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.3.2.min.js"></script>
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.3.2.min.js"></script>
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.3.2.min.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/@holoviz/panel@^0.12.0/dist/panel.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="5f5b905b-16f8-4a4a-b230-5684c5f809a2" data-root-id="5074"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="5206">
+          {"5993d1d3-d3b8-4f54-ab77-eda655378f46":{"defs":[{"extends":null,"module":null,"name":"ReactiveHTML1","overrides":[],"properties":[]},{"extends":null,"module":null,"name":"FlexBox1","overrides":[],"properties":[{"default":"flex-start","kind":null,"name":"align_content"},{"default":"flex-start","kind":null,"name":"align_items"},{"default":"row","kind":null,"name":"flex_direction"},{"default":"wrap","kind":null,"name":"flex_wrap"},{"default":"flex-start","kind":null,"name":"justify_content"}]},{"extends":null,"module":null,"name":"TemplateActions1","overrides":[],"properties":[{"default":0,"kind":null,"name":"open_modal"},{"default":0,"kind":null,"name":"close_modal"}]},{"extends":null,"module":null,"name":"MaterialTemplateActions1","overrides":[],"properties":[{"default":0,"kind":null,"name":"open_modal"},{"default":0,"kind":null,"name":"close_modal"}]}],"roots":{"references":[{"attributes":{"margin":[5,5,5,5],"name":"HSpacer06508","sizing_mode":"stretch_width"},"id":"5144","type":"Spacer"},{"attributes":{"axis_label":"Cryptocurrencies","formatter":{"id":"5119"},"major_label_orientation":0.7853981633974483,"major_label_policy":{"id":"5120"},"ticker":{"id":"5089"}},"id":"5088","type":"CategoricalAxis"},{"attributes":{"active_multi":null,"tools":[{"id":"5078"},{"id":"5095"},{"id":"5096"},{"id":"5097"},{"id":"5098"},{"id":"5099"}]},"id":"5101","type":"Toolbar"},{"attributes":{"source":{"id":"5108"}},"id":"5116","type":"CDSView"},{"attributes":{},"id":"5121","type":"BasicTickFormatter"},{"attributes":{"overlay":{"id":"5100"}},"id":"5098","type":"BoxZoomTool"},{"attributes":{},"id":"5089","type":"CategoricalTicker"},{"attributes":{},"id":"5123","type":"AllLabels"},{"attributes":{"factors":["DASH","XLM","WAVES","BTC","DOGE","SC","LTC","ETH","USDT","ADA","ZEC","XRP","LISK"],"tags":[[["index","index",null]]]},"id":"5076","type":"FactorRange"},{"attributes":{"children":[{"id":"5075"},{"id":"5079"},{"id":"5144"}],"margin":[0,0,0,0],"name":"Row06503","tags":["embedded"]},"id":"5074","type":"Row"},{"attributes":{"axis_label":"Standard Deviation","formatter":{"id":"5121"},"major_label_policy":{"id":"5123"},"ticker":{"id":"5092"}},"id":"5091","type":"LinearAxis"},{"attributes":{},"id":"5099","type":"ResetTool"},{"attributes":{"data":{"index":["DASH","XLM","WAVES","BTC","DOGE","SC","LTC","ETH","USDT","ADA","ZEC","XRP","LISK"],"std":{"__ndarray__":"bkCT19tqUj++w6fqnrjLP7r1WjRG0ss/KrVcFoAozT8qtVwWgCjNPwEFfh0SgdE/4aHkwArg0T9KZmpJKwzTPxhviiKkHtU/SUf8vuYA2T80POH2XofgPzVStbZCUeE/BemjE0De4j8=","dtype":"float64","order":"little","shape":[13]}},"selected":{"id":"5109"},"selection_policy":{"id":"5132"}},"id":"5108","type":"ColumnDataSource"},{"attributes":{"fill_color":{"value":"cyan"},"top":{"field":"std"},"width":{"value":0.8},"x":{"field":"index"}},"id":"5111","type":"VBar"},{"attributes":{"axis":{"id":"5091"},"dimension":1,"grid_line_color":null,"ticker":null},"id":"5094","type":"Grid"},{"attributes":{},"id":"5097","type":"WheelZoomTool"},{"attributes":{},"id":"5119","type":"CategoricalTickFormatter"},{"attributes":{"fill_alpha":{"value":0.2},"fill_color":{"value":"cyan"},"line_alpha":{"value":0.2},"top":{"field":"std"},"width":{"value":0.8},"x":{"field":"index"}},"id":"5114","type":"VBar"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"cyan"},"line_alpha":{"value":0.1},"top":{"field":"std"},"width":{"value":0.8},"x":{"field":"index"}},"id":"5112","type":"VBar"},{"attributes":{},"id":"5109","type":"Selection"},{"attributes":{},"id":"5092","type":"BasicTicker"},{"attributes":{},"id":"5120","type":"AllLabels"},{"attributes":{"fill_color":{"value":"black"},"top":{"field":"std"},"width":{"value":0.8},"x":{"field":"index"}},"id":"5113","type":"VBar"},{"attributes":{"data_source":{"id":"5108"},"glyph":{"id":"5111"},"hover_glyph":{"id":"5113"},"muted_glyph":{"id":"5114"},"nonselection_glyph":{"id":"5112"},"selection_glyph":{"id":"5117"},"view":{"id":"5116"}},"id":"5115","type":"GlyphRenderer"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","syncable":false,"top_units":"screen"},"id":"5100","type":"BoxAnnotation"},{"attributes":{},"id":"5084","type":"CategoricalScale"},{"attributes":{"axis":{"id":"5088"},"grid_line_color":null,"ticker":null},"id":"5090","type":"Grid"},{"attributes":{"below":[{"id":"5088"}],"center":[{"id":"5090"},{"id":"5094"}],"height":300,"left":[{"id":"5091"}],"margin":[5,5,5,5],"min_border_bottom":10,"min_border_left":10,"min_border_right":10,"min_border_top":10,"renderers":[{"id":"5115"}],"sizing_mode":"fixed","title":{"id":"5080"},"toolbar":{"id":"5101"},"width":700,"x_range":{"id":"5076"},"x_scale":{"id":"5084"},"y_range":{"id":"5077"},"y_scale":{"id":"5086"}},"id":"5079","subtype":"Figure","type":"Plot"},{"attributes":{"margin":[5,5,5,5],"name":"HSpacer06507","sizing_mode":"stretch_width"},"id":"5075","type":"Spacer"},{"attributes":{},"id":"5086","type":"LinearScale"},{"attributes":{"callback":null,"renderers":[{"id":"5115"}],"tags":["hv_created"],"tooltips":[["index","@{index}"],["std","@{std}"]]},"id":"5078","type":"HoverTool"},{"attributes":{},"id":"5096","type":"PanTool"},{"attributes":{"end":0.6484807688970068,"reset_end":0.6484807688970068,"reset_start":0.0,"tags":[[["std","std",null]]]},"id":"5077","type":"Range1d"},{"attributes":{"bottom":{"value":0},"fill_alpha":{"value":1.0},"fill_color":{"value":"cyan"},"hatch_alpha":{"value":1.0},"hatch_color":{"value":"black"},"hatch_scale":{"value":12.0},"hatch_weight":{"value":1.0},"line_alpha":{"value":1.0},"line_cap":{"value":"butt"},"line_color":{"value":"black"},"line_dash":{"value":[]},"line_dash_offset":{"value":0},"line_join":{"value":"bevel"},"line_width":{"value":1},"top":{"field":"std"},"width":{"value":0.8},"x":{"field":"index"}},"id":"5117","type":"VBar"},{"attributes":{},"id":"5132","type":"UnionRenderers"},{"attributes":{},"id":"5095","type":"SaveTool"},{"attributes":{"text":"2020 Bar: Standard Deviation of Selected Cryptocurrencies","text_color":"black","text_font_size":"12pt"},"id":"5080","type":"Title"}],"root_ids":["5074"]},"title":"Bokeh Application","version":"2.3.2"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('5206').textContent;
+                  var render_items = [{"docid":"5993d1d3-d3b8-4f54-ab77-eda655378f46","root_ids":["5074"],"roots":{"5074":"5f5b905b-16f8-4a4a-b230-5684c5f809a2"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
