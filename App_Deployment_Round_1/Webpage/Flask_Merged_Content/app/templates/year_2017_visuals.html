@@ -1,0 +1,693 @@
+{% extends "layout.html" %}
+{% block content %}
+   <div class="year_2017_vis">
+   </div>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+</head>
+<body>
+    <h1>2017 Page (Visuals Only)</h1>
+    <p>This page provides visual data that allows users to view basic risk and return metrics in the cryptocurrency market for the year 2017.</p>
+
+</body>
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>monthly_2017_returns</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.3.2.min.js"></script>
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.3.2.min.js"></script>
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.3.2.min.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/@holoviz/panel@^0.12.0/dist/panel.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="5226a043-5652-4770-bf73-3320fa770554" data-root-id="2939"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="3226">
+          {"b77fcdaa-d134-419a-a29c-b3a9f7f1d6bf":{"defs":[{"extends":null,"module":null,"name":"ReactiveHTML1","overrides":[],"properties":[]},{"extends":null,"module":null,"name":"FlexBox1","overrides":[],"properties":[{"default":"flex-start","kind":null,"name":"align_content"},{"default":"flex-start","kind":null,"name":"align_items"},{"default":"row","kind":null,"name":"flex_direction"},{"default":"wrap","kind":null,"name":"flex_wrap"},{"default":"flex-start","kind":null,"name":"justify_content"}]},{"extends":null,"module":null,"name":"TemplateActions1","overrides":[],"properties":[{"default":0,"kind":null,"name":"open_modal"},{"default":0,"kind":null,"name":"close_modal"}]},{"extends":null,"module":null,"name":"MaterialTemplateActions1","overrides":[],"properties":[{"default":0,"kind":null,"name":"open_modal"},{"default":0,"kind":null,"name":"close_modal"}]}],"roots":{"references":[{"attributes":{"source":{"id":"2992"}},"id":"2997","type":"CDSView"},{"attributes":{"data_source":{"id":"2992"},"glyph":{"id":"2994"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"2995"},"selection_glyph":{"id":"2998"},"view":{"id":"2997"}},"id":"2996","type":"GlyphRenderer"},{"attributes":{},"id":"3023","type":"UnionRenderers"},{"attributes":{"active_multi":null,"tools":[{"id":"2959"},{"id":"2960"},{"id":"2961"},{"id":"2962"},{"id":"2963"}]},"id":"2965","type":"Toolbar"},{"attributes":{},"id":"3018","type":"CategoricalTickFormatter"},{"attributes":{},"id":"2959","type":"SaveTool"},{"attributes":{},"id":"3069","type":"UnionRenderers"},{"attributes":{},"id":"2960","type":"PanTool"},{"attributes":{"data_source":{"id":"2971"},"glyph":{"id":"2973"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"2974"},"selection_glyph":{"id":"2977"},"view":{"id":"2976"}},"id":"2975","type":"GlyphRenderer"},{"attributes":{},"id":"3026","type":"Selection"},{"attributes":{"text":"2017: Spread of Monthly Returns","text_color":"black","text_font_size":"12pt"},"id":"2944","type":"Title"},{"attributes":{},"id":"2961","type":"WheelZoomTool"},{"attributes":{"line_alpha":{"value":0.1},"x0":{"field":"x0"},"x1":{"field":"x1"},"y0":{"field":"y0"},"y1":{"field":"y1"}},"id":"2988","type":"Segment"},{"attributes":{},"id":"3015","type":"BasicTickFormatter"},{"attributes":{"overlay":{"id":"2964"}},"id":"2962","type":"BoxZoomTool"},{"attributes":{},"id":"3068","type":"Selection"},{"attributes":{},"id":"2963","type":"ResetTool"},{"attributes":{"data":{"bottom":{"__ndarray__":"gHney3fvzT9yoVVUDRndP8vAdgbUf+E/AAAAAAAAAAAAQIvSscETPyi2Qf/G/9E/AACjlTo4Gj9EMeg51WjRPw==","dtype":"float64","order":"little","shape":[8]},"index":["BTC","ETH","LTC","XLM","XRP","ZEC","USDT","DASH"],"top":{"__ndarray__":"2IIWUSvCqT9A4GYMhoRzPwCeO7A9f0q/Uml08YeSxL/Ob2HeBR2zvySy6xm/Yqq/AIY6FPlPbb8AAAAAAAAAAA==","dtype":"float64","order":"little","shape":[8]}},"selected":{"id":"3068"},"selection_policy":{"id":"3069"}},"id":"3035","type":"ColumnDataSource"},{"attributes":{"line_alpha":{"value":0.1},"x0":{"field":"x0"},"x1":{"field":"x1"},"y0":{"field":"y0"},"y1":{"field":"y1"}},"id":"2981","type":"Segment"},{"attributes":{},"id":"2953","type":"CategoricalTicker"},{"attributes":{},"id":"3024","type":"Selection"},{"attributes":{"bottom":{"field":"bottom"},"fill_alpha":{"value":0.1},"fill_color":{"value":"cyan"},"line_alpha":{"value":0.1},"top":{"field":"top"},"width":{"value":0.7},"x":{"field":"index"}},"id":"3009","type":"VBar"},{"attributes":{"fill_color":{"value":"red"},"line_color":{"value":"red"},"x":{"field":"index"},"y":{"field":"value"}},"id":"2973","type":"Circle"},{"attributes":{},"id":"3028","type":"Selection"},{"attributes":{"axis":{"id":"2955"},"dimension":1,"grid_line_color":null,"ticker":null},"id":"2958","type":"Grid"},{"attributes":{},"id":"3027","type":"UnionRenderers"},{"attributes":{"data":{"index":["ETH","ETH","XLM","XRP","USDT","USDT","DASH"],"value":{"__ndarray__":"w3Wj7t1vAUAY4v13/Kb+P6lHsx/JTRhAhDJ6W9YqHUCwUOqDHbfAP2Dv5kCYs6i/IDN0BXCp/D8=","dtype":"float64","order":"little","shape":[7]}},"selected":{"id":"3020"},"selection_policy":{"id":"3021"}},"id":"2971","type":"ColumnDataSource"},{"attributes":{"line_alpha":{"value":1.0},"line_cap":{"value":"butt"},"line_color":{"value":"black"},"line_dash":{"value":[]},"line_dash_offset":{"value":0},"line_join":{"value":"bevel"},"line_width":{"value":1},"x0":{"field":"x0"},"x1":{"field":"x1"},"y0":{"field":"y0"},"y1":{"field":"y1"}},"id":"2998","type":"Segment"},{"attributes":{"line_alpha":{"value":0.1},"x0":{"field":"x0"},"x1":{"field":"x1"},"y0":{"field":"y0"},"y1":{"field":"y1"}},"id":"3002","type":"Segment"},{"attributes":{"data":{"x0":[["BTC",-0.2],["ETH",-0.2],["LTC",-0.2],["XLM",-0.2],["XRP",-0.2],["ZEC",-0.2],["USDT",-0.2],["DASH",-0.2]],"x1":[["BTC",0.2],["ETH",0.2],["LTC",0.2],["XLM",0.2],["XRP",0.2],["ZEC",0.2],["USDT",0.2],["DASH",0.2]],"y0":[0.6963590448628394,0.9229230980430443,1.629295581687407,1.1056091148115685,0.5748031496062993,1.4952111154622294,0.012218138472235962,1.1690868347338936],"y1":[0.6963590448628394,0.9229230980430443,1.629295581687407,1.1056091148115685,0.5748031496062993,1.4952111154622294,0.012218138472235962,1.1690868347338936]},"selected":{"id":"3028"},"selection_policy":{"id":"3029"}},"id":"2999","type":"ColumnDataSource"},{"attributes":{"axis_label":"","formatter":{"id":"3015"},"major_label_policy":{"id":"3014"},"ticker":{"id":"2956"}},"id":"2955","type":"LinearAxis"},{"attributes":{"end":8.061992811327487,"reset_end":8.061992811327487,"reset_start":-1.1799209246023619,"start":-1.1799209246023619,"tags":[[["value","value",null]]]},"id":"2942","type":"Range1d"},{"attributes":{"x0":{"field":"x0"},"x1":{"field":"x1"},"y0":{"field":"y0"},"y1":{"field":"y1"}},"id":"3001","type":"Segment"},{"attributes":{"source":{"id":"2999"}},"id":"3004","type":"CDSView"},{"attributes":{"items":[]},"id":"3032","type":"Legend"},{"attributes":{},"id":"3021","type":"UnionRenderers"},{"attributes":{"data_source":{"id":"2999"},"glyph":{"id":"3001"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"3002"},"selection_glyph":{"id":"3005"},"view":{"id":"3004"}},"id":"3003","type":"GlyphRenderer"},{"attributes":{},"id":"3025","type":"UnionRenderers"},{"attributes":{},"id":"3022","type":"Selection"},{"attributes":{"below":[{"id":"2952"}],"center":[{"id":"2954"},{"id":"2958"},{"id":"3032"}],"height":300,"left":[{"id":"2955"}],"margin":[5,5,5,5],"min_border_bottom":10,"min_border_left":10,"min_border_right":10,"min_border_top":10,"renderers":[{"id":"2975"},{"id":"2982"},{"id":"2989"},{"id":"2996"},{"id":"3003"},{"id":"3010"},{"id":"3039"}],"sizing_mode":"fixed","title":{"id":"2944"},"toolbar":{"id":"2965"},"width":700,"x_range":{"id":"2941"},"x_scale":{"id":"2948"},"y_range":{"id":"2942"},"y_scale":{"id":"2950"}},"id":"2943","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"3017","type":"AllLabels"},{"attributes":{},"id":"3029","type":"UnionRenderers"},{"attributes":{"line_alpha":{"value":1.0},"line_cap":{"value":"butt"},"line_color":{"value":"black"},"line_dash":{"value":[]},"line_dash_offset":{"value":0},"line_join":{"value":"bevel"},"line_width":{"value":1},"x0":{"field":"x0"},"x1":{"field":"x1"},"y0":{"field":"y0"},"y1":{"field":"y1"}},"id":"2991","type":"Segment"},{"attributes":{"line_alpha":{"value":1.0},"line_cap":{"value":"butt"},"line_color":{"value":"black"},"line_dash":{"value":[]},"line_dash_offset":{"value":0},"line_join":{"value":"bevel"},"line_width":{"value":1},"x0":{"field":"x0"},"x1":{"field":"x1"},"y0":{"field":"y0"},"y1":{"field":"y1"}},"id":"3005","type":"Segment"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","syncable":false,"top_units":"screen"},"id":"2964","type":"BoxAnnotation"},{"attributes":{},"id":"3030","type":"Selection"},{"attributes":{},"id":"3031","type":"UnionRenderers"},{"attributes":{"x0":{"field":"x0"},"x1":{"field":"x1"},"y0":{"field":"y0"},"y1":{"field":"y1"}},"id":"2980","type":"Segment"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"red"},"line_alpha":{"value":0.1},"line_color":{"value":"red"},"x":{"field":"index"},"y":{"field":"value"}},"id":"2974","type":"Circle"},{"attributes":{"x0":{"field":"x0"},"x1":{"field":"x1"},"y0":{"field":"y0"},"y1":{"field":"y1"}},"id":"2994","type":"Segment"},{"attributes":{"source":{"id":"3006"}},"id":"3011","type":"CDSView"},{"attributes":{"data":{"x0":["BTC","ETH","LTC","XLM","XRP","ZEC","USDT","DASH"],"x1":["BTC","ETH","LTC","XLM","XRP","ZEC","USDT","DASH"],"y0":{"__ndarray__":"QMHv6x2+tb90FyQ8H+HRv/ydRh5B6s6/SsbKvI/+2L+wO5Tth7PUv4ACFhOIOdq/ANQGRh6Sc79wAI2gaaLDvw==","dtype":"float64","order":"little","shape":[8]},"y1":{"__ndarray__":"2IIWUSvCqT9A4GYMhoRzPwCeO7A9f0q/Uml08YeSxL/Ob2HeBR2zvySy6xm/Yqq/AIY6FPlPbb8AAAAAAAAAAA==","dtype":"float64","order":"little","shape":[8]}},"selected":{"id":"3024"},"selection_policy":{"id":"3025"}},"id":"2985","type":"ColumnDataSource"},{"attributes":{"line_alpha":{"value":1.0},"line_cap":{"value":"butt"},"line_color":{"value":"black"},"line_dash":{"value":[]},"line_dash_offset":{"value":0},"line_join":{"value":"bevel"},"line_width":{"value":1},"x0":{"field":"x0"},"x1":{"field":"x1"},"y0":{"field":"y0"},"y1":{"field":"y1"}},"id":"2984","type":"Segment"},{"attributes":{"data":{"bottom":{"__ndarray__":"Kj/dbxQU4D9kDgGdhiToP2brN4Eelug/easoc9e05D8A3fQSoBHTP5qz52sEceM/AO24pwfbez88GbdgHrXePw==","dtype":"float64","order":"little","shape":[8]},"index":["BTC","ETH","LTC","XLM","XRP","ZEC","USDT","DASH"],"top":{"__ndarray__":"gHney3fvzT9yoVVUDRndP8vAdgbUf+E/AAAAAAAAAAAAQIvSscETPyi2Qf/G/9E/AACjlTo4Gj9EMeg51WjRPw==","dtype":"float64","order":"little","shape":[8]}},"selected":{"id":"3030"},"selection_policy":{"id":"3031"}},"id":"3006","type":"ColumnDataSource"},{"attributes":{"bottom":{"field":"bottom"},"fill_alpha":{"value":1.0},"fill_color":{"value":"cyan"},"hatch_alpha":{"value":1.0},"hatch_color":{"value":"black"},"hatch_scale":{"value":12.0},"hatch_weight":{"value":1.0},"line_alpha":{"value":1.0},"line_cap":{"value":"butt"},"line_color":{"value":"black"},"line_dash":{"value":[]},"line_dash_offset":{"value":0},"line_join":{"value":"bevel"},"line_width":{"value":1},"top":{"field":"top"},"width":{"value":0.7},"x":{"field":"index"}},"id":"3034","type":"VBar"},{"attributes":{"bottom":{"field":"bottom"},"fill_color":{"value":"cyan"},"top":{"field":"top"},"width":{"value":0.7},"x":{"field":"index"}},"id":"3008","type":"VBar"},{"attributes":{"data_source":{"id":"2978"},"glyph":{"id":"2980"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"2981"},"selection_glyph":{"id":"2984"},"view":{"id":"2983"}},"id":"2982","type":"GlyphRenderer"},{"attributes":{"source":{"id":"3035"}},"id":"3040","type":"CDSView"},{"attributes":{"x0":{"field":"x0"},"x1":{"field":"x1"},"y0":{"field":"y0"},"y1":{"field":"y1"}},"id":"2987","type":"Segment"},{"attributes":{"axis_label":"Variable","formatter":{"id":"3018"},"major_label_orientation":0.7853981633974483,"major_label_policy":{"id":"3017"},"ticker":{"id":"2953"}},"id":"2952","type":"CategoricalAxis"},{"attributes":{"margin":[5,5,5,5],"name":"HSpacer03999","sizing_mode":"stretch_width"},"id":"3092","type":"Spacer"},{"attributes":{"source":{"id":"2985"}},"id":"2990","type":"CDSView"},{"attributes":{"source":{"id":"2978"}},"id":"2983","type":"CDSView"},{"attributes":{},"id":"2950","type":"LinearScale"},{"attributes":{"bottom":{"field":"bottom"},"fill_color":{"value":"cyan"},"top":{"field":"top"},"width":{"value":0.7},"x":{"field":"index"}},"id":"3037","type":"VBar"},{"attributes":{},"id":"3020","type":"Selection"},{"attributes":{"data":{"x0":["BTC","ETH","LTC","XLM","XRP","ZEC","USDT","DASH"],"x1":["BTC","ETH","LTC","XLM","XRP","ZEC","USDT","DASH"],"y0":{"__ndarray__":"zLV+w5JI5j8MLFoFlojtP9rVbT6YEfo/NGfkLpOw8T+aTCaTyWTiP1BqmH1i7Pc/gAFAydIFiT8U3JVllLTyPw==","dtype":"float64","order":"little","shape":[8]},"y1":{"__ndarray__":"Kj/dbxQU4D9kDgGdhiToP2brN4Eelug/easoc9e05D8A3fQSoBHTP5qz52sEceM/AO24pwfbez88GbdgHrXePw==","dtype":"float64","order":"little","shape":[8]}},"selected":{"id":"3022"},"selection_policy":{"id":"3023"}},"id":"2978","type":"ColumnDataSource"},{"attributes":{},"id":"3014","type":"AllLabels"},{"attributes":{"axis":{"id":"2952"},"grid_line_color":null,"ticker":null},"id":"2954","type":"Grid"},{"attributes":{"data_source":{"id":"3006"},"glyph":{"id":"3008"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"3009"},"selection_glyph":{"id":"3034"},"view":{"id":"3011"}},"id":"3010","type":"GlyphRenderer"},{"attributes":{"margin":[5,5,5,5],"name":"HSpacer03998","sizing_mode":"stretch_width"},"id":"2940","type":"Spacer"},{"attributes":{"bottom":{"field":"bottom"},"fill_alpha":{"value":0.1},"fill_color":{"value":"cyan"},"line_alpha":{"value":0.1},"top":{"field":"top"},"width":{"value":0.7},"x":{"field":"index"}},"id":"3038","type":"VBar"},{"attributes":{"data":{"x0":[["BTC",-0.2],["ETH",-0.2],["LTC",-0.2],["XLM",-0.2],["XRP",-0.2],["ZEC",-0.2],["USDT",-0.2],["DASH",-0.2]],"x1":[["BTC",0.2],["ETH",0.2],["LTC",0.2],["XLM",0.2],["XRP",0.2],["ZEC",0.2],["USDT",0.2],["DASH",0.2]],"y0":[-0.08493220338983054,-0.27936535714285715,-0.24152387598336122,-0.3905371993706451,-0.32345770073964797,-0.4097614466082078,-0.004778021102926466,-0.15339393939393942],"y1":[-0.08493220338983054,-0.27936535714285715,-0.24152387598336122,-0.3905371993706451,-0.32345770073964797,-0.4097614466082078,-0.004778021102926466,-0.15339393939393942]},"selected":{"id":"3026"},"selection_policy":{"id":"3027"}},"id":"2992","type":"ColumnDataSource"},{"attributes":{"line_alpha":{"value":0.1},"x0":{"field":"x0"},"x1":{"field":"x1"},"y0":{"field":"y0"},"y1":{"field":"y1"}},"id":"2995","type":"Segment"},{"attributes":{"source":{"id":"2971"}},"id":"2976","type":"CDSView"},{"attributes":{"data_source":{"id":"2985"},"glyph":{"id":"2987"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"2988"},"selection_glyph":{"id":"2991"},"view":{"id":"2990"}},"id":"2989","type":"GlyphRenderer"},{"attributes":{},"id":"2948","type":"CategoricalScale"},{"attributes":{"bottom":{"field":"bottom"},"fill_alpha":{"value":1.0},"fill_color":{"value":"cyan"},"hatch_alpha":{"value":1.0},"hatch_color":{"value":"black"},"hatch_scale":{"value":12.0},"hatch_weight":{"value":1.0},"line_alpha":{"value":1.0},"line_cap":{"value":"butt"},"line_color":{"value":"black"},"line_dash":{"value":[]},"line_dash_offset":{"value":0},"line_join":{"value":"bevel"},"line_width":{"value":1},"top":{"field":"top"},"width":{"value":0.7},"x":{"field":"index"}},"id":"3041","type":"VBar"},{"attributes":{"data_source":{"id":"3035"},"glyph":{"id":"3037"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"3038"},"selection_glyph":{"id":"3041"},"view":{"id":"3040"}},"id":"3039","type":"GlyphRenderer"},{"attributes":{},"id":"2956","type":"BasicTicker"},{"attributes":{"angle":{"value":0.0},"fill_alpha":{"value":1.0},"fill_color":{"value":"red"},"hatch_alpha":{"value":1.0},"hatch_color":{"value":"black"},"hatch_scale":{"value":12.0},"hatch_weight":{"value":1.0},"line_alpha":{"value":1.0},"line_cap":{"value":"butt"},"line_color":{"value":"red"},"line_dash":{"value":[]},"line_dash_offset":{"value":0},"line_join":{"value":"bevel"},"line_width":{"value":1},"size":{"value":4},"x":{"field":"index"},"y":{"field":"value"}},"id":"2977","type":"Circle"},{"attributes":{"factors":["BTC","ETH","LTC","XLM","XRP","ZEC","USDT","DASH"],"tags":[[["Variable","Variable",null]]]},"id":"2941","type":"FactorRange"},{"attributes":{"children":[{"id":"2940"},{"id":"2943"},{"id":"3092"}],"margin":[0,0,0,0],"name":"Row03994","tags":["embedded"]},"id":"2939","type":"Row"}],"root_ids":["2939"]},"title":"Bokeh Application","version":"2.3.2"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('3226').textContent;
+                  var render_items = [{"docid":"b77fcdaa-d134-419a-a29c-b3a9f7f1d6bf","root_ids":["2939"],"roots":{"2939":"5226a043-5652-4770-bf73-3320fa770554"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>avg_2017_monthly_returns_bar</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.3.2.min.js"></script>
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.3.2.min.js"></script>
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.3.2.min.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/@holoviz/panel@^0.12.0/dist/panel.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="30699679-d3b5-4214-9a2a-02d07fa2c842" data-root-id="3349"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="3481">
+          {"50ed35e8-2eab-4bc9-baf4-31f11672dc1e":{"defs":[{"extends":null,"module":null,"name":"ReactiveHTML1","overrides":[],"properties":[]},{"extends":null,"module":null,"name":"FlexBox1","overrides":[],"properties":[{"default":"flex-start","kind":null,"name":"align_content"},{"default":"flex-start","kind":null,"name":"align_items"},{"default":"row","kind":null,"name":"flex_direction"},{"default":"wrap","kind":null,"name":"flex_wrap"},{"default":"flex-start","kind":null,"name":"justify_content"}]},{"extends":null,"module":null,"name":"TemplateActions1","overrides":[],"properties":[{"default":0,"kind":null,"name":"open_modal"},{"default":0,"kind":null,"name":"close_modal"}]},{"extends":null,"module":null,"name":"MaterialTemplateActions1","overrides":[],"properties":[{"default":0,"kind":null,"name":"open_modal"},{"default":0,"kind":null,"name":"close_modal"}]}],"roots":{"references":[{"attributes":{"axis":{"id":"3366"},"dimension":1,"grid_line_color":null,"ticker":null},"id":"3369","type":"Grid"},{"attributes":{},"id":"3367","type":"BasicTicker"},{"attributes":{"source":{"id":"3383"}},"id":"3391","type":"CDSView"},{"attributes":{"data":{"index":["USDT","BTC","ZEC","DASH","LTC","ETH","XRP","XLM"],"mean":{"__ndarray__":"VXRW6tOphT+YElLqZbjRPzOmLamST9Q/FZGuF3iq2j8gRo0q+bXfP58m7cSifeI/FmHS4PL47T9YtkHd6m/uPw==","dtype":"float64","order":"little","shape":[8]}},"selected":{"id":"3384"},"selection_policy":{"id":"3408"}},"id":"3383","type":"ColumnDataSource"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"cyan"},"line_alpha":{"value":0.1},"top":{"field":"mean"},"width":{"value":0.8},"x":{"field":"index"}},"id":"3387","type":"VBar"},{"attributes":{"text":"2017 Bar: Average Monthly Returns by Percentage","text_color":"black","text_font_size":"12pt"},"id":"3355","type":"Title"},{"attributes":{"fill_color":{"value":"black"},"top":{"field":"mean"},"width":{"value":0.8},"x":{"field":"index"}},"id":"3388","type":"VBar"},{"attributes":{"active_multi":null,"tools":[{"id":"3353"},{"id":"3370"},{"id":"3371"},{"id":"3372"},{"id":"3373"},{"id":"3374"}]},"id":"3376","type":"Toolbar"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","syncable":false,"top_units":"screen"},"id":"3375","type":"BoxAnnotation"},{"attributes":{},"id":"3408","type":"UnionRenderers"},{"attributes":{"fill_alpha":{"value":0.2},"fill_color":{"value":"cyan"},"line_alpha":{"value":0.2},"top":{"field":"mean"},"width":{"value":0.8},"x":{"field":"index"}},"id":"3389","type":"VBar"},{"attributes":{"data_source":{"id":"3383"},"glyph":{"id":"3386"},"hover_glyph":{"id":"3388"},"muted_glyph":{"id":"3389"},"nonselection_glyph":{"id":"3387"},"selection_glyph":{"id":"3392"},"view":{"id":"3391"}},"id":"3390","type":"GlyphRenderer"},{"attributes":{},"id":"3394","type":"CategoricalTickFormatter"},{"attributes":{"children":[{"id":"3350"},{"id":"3354"},{"id":"3419"}],"margin":[0,0,0,0],"name":"Row04388","tags":["embedded"]},"id":"3349","type":"Row"},{"attributes":{},"id":"3370","type":"SaveTool"},{"attributes":{"margin":[5,5,5,5],"name":"HSpacer04392","sizing_mode":"stretch_width"},"id":"3350","type":"Spacer"},{"attributes":{},"id":"3384","type":"Selection"},{"attributes":{"end":1.0452201936695813,"reset_end":1.0452201936695813,"reset_start":0.0,"tags":[[["mean","mean",null]]]},"id":"3352","type":"Range1d"},{"attributes":{},"id":"3364","type":"CategoricalTicker"},{"attributes":{"factors":["USDT","BTC","ZEC","DASH","LTC","ETH","XRP","XLM"],"tags":[[["index","index",null]]]},"id":"3351","type":"FactorRange"},{"attributes":{},"id":"3371","type":"PanTool"},{"attributes":{"bottom":{"value":0},"fill_alpha":{"value":1.0},"fill_color":{"value":"cyan"},"hatch_alpha":{"value":1.0},"hatch_color":{"value":"black"},"hatch_scale":{"value":12.0},"hatch_weight":{"value":1.0},"line_alpha":{"value":1.0},"line_cap":{"value":"butt"},"line_color":{"value":"black"},"line_dash":{"value":[]},"line_dash_offset":{"value":0},"line_join":{"value":"bevel"},"line_width":{"value":1},"top":{"field":"mean"},"width":{"value":0.8},"x":{"field":"index"}},"id":"3392","type":"VBar"},{"attributes":{},"id":"3372","type":"WheelZoomTool"},{"attributes":{"axis":{"id":"3363"},"grid_line_color":null,"ticker":null},"id":"3365","type":"Grid"},{"attributes":{},"id":"3396","type":"AllLabels"},{"attributes":{"overlay":{"id":"3375"}},"id":"3373","type":"BoxZoomTool"},{"attributes":{},"id":"3393","type":"AllLabels"},{"attributes":{"below":[{"id":"3363"}],"center":[{"id":"3365"},{"id":"3369"}],"height":300,"left":[{"id":"3366"}],"margin":[5,5,5,5],"min_border_bottom":10,"min_border_left":10,"min_border_right":10,"min_border_top":10,"renderers":[{"id":"3390"}],"sizing_mode":"fixed","title":{"id":"3355"},"toolbar":{"id":"3376"},"width":700,"x_range":{"id":"3351"},"x_scale":{"id":"3359"},"y_range":{"id":"3352"},"y_scale":{"id":"3361"}},"id":"3354","subtype":"Figure","type":"Plot"},{"attributes":{"margin":[5,5,5,5],"name":"HSpacer04393","sizing_mode":"stretch_width"},"id":"3419","type":"Spacer"},{"attributes":{},"id":"3361","type":"LinearScale"},{"attributes":{"axis_label":"percentage change","formatter":{"id":"3398"},"major_label_policy":{"id":"3396"},"ticker":{"id":"3367"}},"id":"3366","type":"LinearAxis"},{"attributes":{},"id":"3374","type":"ResetTool"},{"attributes":{"fill_color":{"value":"cyan"},"top":{"field":"mean"},"width":{"value":0.8},"x":{"field":"index"}},"id":"3386","type":"VBar"},{"attributes":{},"id":"3398","type":"BasicTickFormatter"},{"attributes":{"callback":null,"renderers":[{"id":"3390"}],"tags":["hv_created"],"tooltips":[["index","@{index}"],["mean","@{mean}"]]},"id":"3353","type":"HoverTool"},{"attributes":{},"id":"3359","type":"CategoricalScale"},{"attributes":{"axis_label":"Cryptocurrencies","formatter":{"id":"3394"},"major_label_orientation":0.7853981633974483,"major_label_policy":{"id":"3393"},"ticker":{"id":"3364"}},"id":"3363","type":"CategoricalAxis"}],"root_ids":["3349"]},"title":"Bokeh Application","version":"2.3.2"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('3481').textContent;
+                  var render_items = [{"docid":"50ed35e8-2eab-4bc9-baf4-31f11672dc1e","root_ids":["3349"],"roots":{"3349":"30699679-d3b5-4214-9a2a-02d07fa2c842"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>avg_2017_monthly_returns_heat</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.3.2.min.js"></script>
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.3.2.min.js"></script>
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.3.2.min.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/@holoviz/panel@^0.12.0/dist/panel.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="f2e4be95-1cf9-4e82-9471-77a9c034e4b0" data-root-id="3096"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="3237">
+          {"ae58c793-ed89-4396-a6c3-b49bac4af021":{"defs":[{"extends":null,"module":null,"name":"ReactiveHTML1","overrides":[],"properties":[]},{"extends":null,"module":null,"name":"FlexBox1","overrides":[],"properties":[{"default":"flex-start","kind":null,"name":"align_content"},{"default":"flex-start","kind":null,"name":"align_items"},{"default":"row","kind":null,"name":"flex_direction"},{"default":"wrap","kind":null,"name":"flex_wrap"},{"default":"flex-start","kind":null,"name":"justify_content"}]},{"extends":null,"module":null,"name":"TemplateActions1","overrides":[],"properties":[{"default":0,"kind":null,"name":"open_modal"},{"default":0,"kind":null,"name":"close_modal"}]},{"extends":null,"module":null,"name":"MaterialTemplateActions1","overrides":[],"properties":[{"default":0,"kind":null,"name":"open_modal"},{"default":0,"kind":null,"name":"close_modal"}]}],"roots":{"references":[{"attributes":{"axis_label":"","formatter":{"id":"3146"},"major_label_policy":{"id":"3144"},"ticker":{"id":"3114"}},"id":"3113","type":"CategoricalAxis"},{"attributes":{},"id":"3108","type":"CategoricalScale"},{"attributes":{"high":0.9511617967052173,"low":0.01057782706157632,"nan_color":"white","palette":["#b3fef5","#b0fef5","#adfdf5","#a9fcf5","#a6fbf6","#a3faf6","#a0faf6","#9df9f6","#9af8f6","#97f7f6","#93f7f6","#90f6f6","#8df5f6","#8af4f7","#87f3f7","#83f2f7","#80f2f7","#7df1f7","#79f0f7","#76eff7","#73eef7","#6fedf8","#6cecf8","#68ecf8","#65ebf8","#61eaf8","#5ee9f8","#5ae8f8","#57e7f8","#53e6f8","#50e5f9","#4ce4f9","#49e3f9","#45e2f9","#42e1f9","#3ee0f9","#3bdff9","#38def9","#35ddf9","#32dcf9","#30dbfa","#2ed9fa","#2dd8fa","#2cd7fa","#2bd6fa","#2bd5fa","#2ad3fa","#2ad2fa","#29d1fa","#29d0fb","#29cffb","#28cdfb","#28ccfb","#28cbfb","#28cafb","#28c8fb","#28c7fb","#29c6fb","#29c5fb","#29c4fb","#29c2fb","#2ac1fb","#2ac0fb","#2bbffb","#2bbdfc","#2cbcfc","#2dbbfc","#2db9fc","#2eb8fc","#2fb7fc","#2fb6fc","#30b4fc","#31b3fc","#32b2fc","#32b0fc","#33affc","#33aefc","#34adfc","#34abfc","#34aafc","#35a9fc","#35a8fc","#35a6fc","#35a5fc","#35a4fc","#35a3fc","#35a1fc","#35a0fc","#359ffc","#359dfc","#359cfc","#359bfc","#349afd","#3498fd","#3497fd","#3396fd","#3395fd","#3293fd","#3292fd","#3191fd","#3090fd","#308ffd","#2f8dfd","#2f8cfd","#2e8bfd","#2e8afd","#2d88fd","#2d87fd","#2c86fd","#2c84fd","#2c83fd","#2c82fd","#2b81fd","#2b7ffd","#2b7efd","#2b7dfd","#2b7bfd","#2b7afd","#2b79fd","#2b77fd","#2b76fd","#2b75fd","#2b73fd","#2c72fd","#2c71fd","#2c6ffd","#2c6efd","#2d6cfd","#2d6bfd","#2d6afc","#2e68fc","#2e67fc","#2e65fc","#2e64fc","#2f62fc","#2f61fc","#2f5ffc","#2f5efc","#2f5dfc","#2f5bfc","#2f5afc","#2f58fb","#2f57fb","#2f55fb","#2f53fb","#2f52fb","#2f50fb","#2f4ffb","#2f4dfb","#2e4cfb","#2e4afb","#2e48fb","#2e47fa","#2d45fa","#2d43fa","#2d42fa","#2d40fa","#2c3efa","#2c3dfa","#2b3bf9","#2b39f9","#2a37f9","#2a36f8","#2934f8","#2832f7","#2831f7","#272ff6","#262ef5","#252cf5","#252af4","#2429f3","#2327f2","#2226f1","#2124f0","#2023ef","#1f22ee","#1e20ed","#1d1feb","#1c1eea","#1b1ce9","#1a1be7","#181ae6","#1719e5","#1618e3","#1417e1","#1316e0","#1215de","#1014dc","#0f13db","#0e12d9","#0d11d7","#0c10d5","#0b0fd3","#0a0ed1","#090dd0","#080dce","#080ccc","#070bca","#070ac8","#0709c6","#0708c4","#0707c2","#0707bf","#0806bd","#0806bb","#0905b9","#0904b7","#0a04b5","#0a04b2","#0b03b0","#0c03ae","#0d02ab","#0e02a9","#0e02a7","#0f02a4","#0f01a2","#1001a0","#10019d","#10019b","#100199","#100197","#100194","#0f0192","#0f0190","#0f018e","#0e018b","#0e0189","#0d0187","#0d0185","#0c0183","#0b0181","#0b017e","#0a017c","#09017a","#090178","#080276","#070274","#060272","#060270","#05026e","#04026c","#030269","#030267","#020265","#010263","#010261","#00025f","#00025d","#00025b","#000259","#000257","#000255","#000154","#000152","#000150","#00004e"]},"id":"3129","type":"LinearColorMapper"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","syncable":false,"top_units":"screen"},"id":"3121","type":"BoxAnnotation"},{"attributes":{"children":[{"id":"3097"},{"id":"3101"},{"id":"3169"}],"margin":[0,0,0,0],"name":"Row03853","tags":["embedded"]},"id":"3096","type":"Row"},{"attributes":{"fill_color":{"field":"zvalues","transform":{"id":"3129"}},"height":{"value":1},"line_alpha":{"value":0},"line_color":{"value":"#1f77b4"},"width":{"value":1},"x":{"field":"columns"},"y":{"field":"index"}},"id":"3133","type":"Rect"},{"attributes":{"below":[{"id":"3110"}],"center":[{"id":"3112"},{"id":"3115"}],"height":300,"left":[{"id":"3113"}],"margin":[5,5,5,5],"min_border_bottom":10,"min_border_left":10,"min_border_right":10,"min_border_top":10,"renderers":[{"id":"3137"}],"right":[{"id":"3140"}],"sizing_mode":"fixed","title":{"id":"3102"},"toolbar":{"id":"3122"},"width":700,"x_range":{"id":"3098"},"x_scale":{"id":"3106"},"y_range":{"id":"3099"},"y_scale":{"id":"3108"}},"id":"3101","subtype":"Figure","type":"Plot"},{"attributes":{"margin":[5,5,5,5],"name":"HSpacer03857","sizing_mode":"stretch_width"},"id":"3097","type":"Spacer"},{"attributes":{"data_source":{"id":"3130"},"glyph":{"id":"3133"},"hover_glyph":{"id":"3136"},"muted_glyph":null,"nonselection_glyph":{"id":"3134"},"selection_glyph":{"id":"3135"},"view":{"id":"3138"}},"id":"3137","type":"GlyphRenderer"},{"attributes":{},"id":"3139","type":"BasicTicker"},{"attributes":{},"id":"3144","type":"AllLabels"},{"attributes":{},"id":"3116","type":"SaveTool"},{"attributes":{},"id":"3146","type":"CategoricalTickFormatter"},{"attributes":{},"id":"3117","type":"PanTool"},{"attributes":{},"id":"3106","type":"CategoricalScale"},{"attributes":{"bar_line_color":"black","color_mapper":{"id":"3129"},"label_standoff":8,"location":[0,0],"major_label_policy":{"id":"3154"},"major_tick_line_color":"black","ticker":{"id":"3139"}},"id":"3140","type":"ColorBar"},{"attributes":{},"id":"3131","type":"Selection"},{"attributes":{"fill_color":{"field":"zvalues","transform":{"id":"3129"}},"height":{"value":1},"line_alpha":{"value":0},"line_color":{"value":"#1f77b4"},"width":{"value":1},"x":{"field":"columns"},"y":{"field":"index"}},"id":"3135","type":"Rect"},{"attributes":{},"id":"3118","type":"WheelZoomTool"},{"attributes":{},"id":"3154","type":"NoOverlap"},{"attributes":{"factors":["USDT","BTC","ZEC","DASH","LTC","ETH","XRP","XLM"],"tags":[[["index","index",null]]]},"id":"3099","type":"FactorRange"},{"attributes":{"axis":{"id":"3113"},"dimension":1,"grid_line_color":null,"ticker":null},"id":"3115","type":"Grid"},{"attributes":{"active_multi":null,"tools":[{"id":"3100"},{"id":"3116"},{"id":"3117"},{"id":"3118"},{"id":"3119"},{"id":"3120"}]},"id":"3122","type":"Toolbar"},{"attributes":{"fill_color":{"value":"orange"},"height":{"value":1},"line_alpha":{"value":0},"line_color":{"value":"orange"},"width":{"value":1},"x":{"field":"columns"},"y":{"field":"index"}},"id":"3136","type":"Rect"},{"attributes":{"factors":["mean"],"tags":[[["columns","columns",null]]]},"id":"3098","type":"FactorRange"},{"attributes":{"overlay":{"id":"3121"}},"id":"3119","type":"BoxZoomTool"},{"attributes":{},"id":"3143","type":"CategoricalTickFormatter"},{"attributes":{"margin":[5,5,5,5],"name":"HSpacer03858","sizing_mode":"stretch_width"},"id":"3169","type":"Spacer"},{"attributes":{},"id":"3120","type":"ResetTool"},{"attributes":{"axis_label":"","formatter":{"id":"3143"},"major_label_policy":{"id":"3141"},"ticker":{"id":"3111"}},"id":"3110","type":"CategoricalAxis"},{"attributes":{"callback":null,"renderers":[{"id":"3137"}],"tags":["hv_created"],"tooltips":[["columns","@{columns}"],["index","@{index}"],["value","@{value}"]]},"id":"3100","type":"HoverTool"},{"attributes":{},"id":"3111","type":"CategoricalTicker"},{"attributes":{"text":"2017 Heatmap: Average Monthly Returns by Percentage","text_color":"black","text_font_size":"12pt"},"id":"3102","type":"Title"},{"attributes":{},"id":"3141","type":"AllLabels"},{"attributes":{"data":{"columns":["mean","mean","mean","mean","mean","mean","mean","mean"],"index":["USDT","BTC","ZEC","DASH","LTC","ETH","XRP","XLM"],"value":["0.010578","0.27688","0.31736","0.41665","0.49548","0.57784","0.93664","0.95116"],"zvalues":{"__ndarray__":"VXRW6tOphT+YElLqZbjRPzOmLamST9Q/FZGuF3iq2j8gRo0q+bXfP58m7cSifeI/FmHS4PL47T9YtkHd6m/uPw==","dtype":"float64","order":"little","shape":[8]}},"selected":{"id":"3131"},"selection_policy":{"id":"3156"}},"id":"3130","type":"ColumnDataSource"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"field":"zvalues","transform":{"id":"3129"}},"height":{"value":1},"line_alpha":{"value":0},"line_color":{"value":"#1f77b4"},"width":{"value":1},"x":{"field":"columns"},"y":{"field":"index"}},"id":"3134","type":"Rect"},{"attributes":{"axis":{"id":"3110"},"grid_line_color":null,"ticker":null},"id":"3112","type":"Grid"},{"attributes":{"source":{"id":"3130"}},"id":"3138","type":"CDSView"},{"attributes":{},"id":"3156","type":"UnionRenderers"},{"attributes":{},"id":"3114","type":"CategoricalTicker"}],"root_ids":["3096"]},"title":"Bokeh Application","version":"2.3.2"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('3237').textContent;
+                  var render_items = [{"docid":"ae58c793-ed89-4396-a6c3-b49bac4af021","root_ids":["3096"],"roots":{"3096":"f2e4be95-1cf9-4e82-9471-77a9c034e4b0"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>std_2017_dev_bar</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.3.2.min.js"></script>
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.3.2.min.js"></script>
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.3.2.min.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/@holoviz/panel@^0.12.0/dist/panel.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="3762e446-af96-401c-8fbf-b451d5e7564a" data-root-id="3360"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="3492">
+          {"0c6cd6a5-3c90-448a-88e4-da5ffa0bf80b":{"defs":[{"extends":null,"module":null,"name":"ReactiveHTML1","overrides":[],"properties":[]},{"extends":null,"module":null,"name":"FlexBox1","overrides":[],"properties":[{"default":"flex-start","kind":null,"name":"align_content"},{"default":"flex-start","kind":null,"name":"align_items"},{"default":"row","kind":null,"name":"flex_direction"},{"default":"wrap","kind":null,"name":"flex_wrap"},{"default":"flex-start","kind":null,"name":"justify_content"}]},{"extends":null,"module":null,"name":"TemplateActions1","overrides":[],"properties":[{"default":0,"kind":null,"name":"open_modal"},{"default":0,"kind":null,"name":"close_modal"}]},{"extends":null,"module":null,"name":"MaterialTemplateActions1","overrides":[],"properties":[{"default":0,"kind":null,"name":"open_modal"},{"default":0,"kind":null,"name":"close_modal"}]}],"roots":{"references":[{"attributes":{"end":2.835930441397372,"reset_end":2.835930441397372,"reset_start":0.0,"tags":[[["std","std",null]]]},"id":"3363","type":"Range1d"},{"attributes":{"axis":{"id":"3377"},"dimension":1,"grid_line_color":null,"ticker":null},"id":"3380","type":"Grid"},{"attributes":{"margin":[5,5,5,5],"name":"HSpacer04182","sizing_mode":"stretch_width"},"id":"3361","type":"Spacer"},{"attributes":{},"id":"3385","type":"ResetTool"},{"attributes":{"margin":[5,5,5,5],"name":"HSpacer04183","sizing_mode":"stretch_width"},"id":"3430","type":"Spacer"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","syncable":false,"top_units":"screen"},"id":"3386","type":"BoxAnnotation"},{"attributes":{"axis_label":"Cryptocurrencies","formatter":{"id":"3406"},"major_label_orientation":0.7853981633974483,"major_label_policy":{"id":"3404"},"ticker":{"id":"3375"}},"id":"3374","type":"CategoricalAxis"},{"attributes":{},"id":"3407","type":"AllLabels"},{"attributes":{"callback":null,"renderers":[{"id":"3401"}],"tags":["hv_created"],"tooltips":[["index","@{index}"],["std","@{std}"]]},"id":"3364","type":"HoverTool"},{"attributes":{},"id":"3372","type":"LinearScale"},{"attributes":{"fill_color":{"value":"cyan"},"top":{"field":"std"},"width":{"value":0.8},"x":{"field":"index"}},"id":"3397","type":"VBar"},{"attributes":{},"id":"3382","type":"PanTool"},{"attributes":{},"id":"3404","type":"AllLabels"},{"attributes":{},"id":"3383","type":"WheelZoomTool"},{"attributes":{"overlay":{"id":"3386"}},"id":"3384","type":"BoxZoomTool"},{"attributes":{},"id":"3395","type":"Selection"},{"attributes":{"data_source":{"id":"3394"},"glyph":{"id":"3397"},"hover_glyph":{"id":"3399"},"muted_glyph":{"id":"3400"},"nonselection_glyph":{"id":"3398"},"selection_glyph":{"id":"3403"},"view":{"id":"3402"}},"id":"3401","type":"GlyphRenderer"},{"attributes":{"bottom":{"value":0},"fill_alpha":{"value":1.0},"fill_color":{"value":"cyan"},"hatch_alpha":{"value":1.0},"hatch_color":{"value":"black"},"hatch_scale":{"value":12.0},"hatch_weight":{"value":1.0},"line_alpha":{"value":1.0},"line_cap":{"value":"butt"},"line_color":{"value":"black"},"line_dash":{"value":[]},"line_dash_offset":{"value":0},"line_join":{"value":"bevel"},"line_width":{"value":1},"top":{"field":"std"},"width":{"value":0.8},"x":{"field":"index"}},"id":"3403","type":"VBar"},{"attributes":{},"id":"3406","type":"CategoricalTickFormatter"},{"attributes":{},"id":"3381","type":"SaveTool"},{"attributes":{"below":[{"id":"3374"}],"center":[{"id":"3376"},{"id":"3380"}],"height":300,"left":[{"id":"3377"}],"margin":[5,5,5,5],"min_border_bottom":10,"min_border_left":10,"min_border_right":10,"min_border_top":10,"renderers":[{"id":"3401"}],"sizing_mode":"fixed","title":{"id":"3366"},"toolbar":{"id":"3387"},"width":700,"x_range":{"id":"3362"},"x_scale":{"id":"3370"},"y_range":{"id":"3363"},"y_scale":{"id":"3372"}},"id":"3365","subtype":"Figure","type":"Plot"},{"attributes":{"active_multi":null,"tools":[{"id":"3364"},{"id":"3381"},{"id":"3382"},{"id":"3383"},{"id":"3384"},{"id":"3385"}]},"id":"3387","type":"Toolbar"},{"attributes":{"source":{"id":"3394"}},"id":"3402","type":"CDSView"},{"attributes":{"data":{"index":["USDT","BTC","ZEC","LTC","DASH","ETH","XLM","XRP"],"std":{"__ndarray__":"GuzTcqqxqD9juMMF/MLRP/h2uIABZeA/mdWSj+0/4j+5cidGhg7lP2UW0FXK7ug/j7jP1oR9AkA5uFps96gEQA==","dtype":"float64","order":"little","shape":[8]}},"selected":{"id":"3395"},"selection_policy":{"id":"3418"}},"id":"3394","type":"ColumnDataSource"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"cyan"},"line_alpha":{"value":0.1},"top":{"field":"std"},"width":{"value":0.8},"x":{"field":"index"}},"id":"3398","type":"VBar"},{"attributes":{"fill_alpha":{"value":0.2},"fill_color":{"value":"cyan"},"line_alpha":{"value":0.2},"top":{"field":"std"},"width":{"value":0.8},"x":{"field":"index"}},"id":"3400","type":"VBar"},{"attributes":{},"id":"3370","type":"CategoricalScale"},{"attributes":{"axis_label":"Standard Deviation","formatter":{"id":"3409"},"major_label_policy":{"id":"3407"},"ticker":{"id":"3378"}},"id":"3377","type":"LinearAxis"},{"attributes":{"axis":{"id":"3374"},"grid_line_color":null,"ticker":null},"id":"3376","type":"Grid"},{"attributes":{},"id":"3378","type":"BasicTicker"},{"attributes":{"fill_color":{"value":"black"},"top":{"field":"std"},"width":{"value":0.8},"x":{"field":"index"}},"id":"3399","type":"VBar"},{"attributes":{"children":[{"id":"3361"},{"id":"3365"},{"id":"3430"}],"margin":[0,0,0,0],"name":"Row04178","tags":["embedded"]},"id":"3360","type":"Row"},{"attributes":{},"id":"3375","type":"CategoricalTicker"},{"attributes":{},"id":"3418","type":"UnionRenderers"},{"attributes":{"factors":["USDT","BTC","ZEC","LTC","DASH","ETH","XLM","XRP"],"tags":[[["index","index",null]]]},"id":"3362","type":"FactorRange"},{"attributes":{"text":"2017 Bar: Standard Deviation of Selected Cryptocurrencies","text_color":"black","text_font_size":"12pt"},"id":"3366","type":"Title"},{"attributes":{},"id":"3409","type":"BasicTickFormatter"}],"root_ids":["3360"]},"title":"Bokeh Application","version":"2.3.2"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('3492').textContent;
+                  var render_items = [{"docid":"0c6cd6a5-3c90-448a-88e4-da5ffa0bf80b","root_ids":["3360"],"roots":{"3360":"3762e446-af96-401c-8fbf-b451d5e7564a"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>std_2017_dev_heat</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.3.2.min.js"></script>
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.3.2.min.js"></script>
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.3.2.min.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/@holoviz/panel@^0.12.0/dist/panel.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="1e0ab24f-7c9a-4c96-b132-75f57990940c" data-root-id="3623"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="3764">
+          {"a91442c8-95bc-495b-804d-fac6afafcadc":{"defs":[{"extends":null,"module":null,"name":"ReactiveHTML1","overrides":[],"properties":[]},{"extends":null,"module":null,"name":"FlexBox1","overrides":[],"properties":[{"default":"flex-start","kind":null,"name":"align_content"},{"default":"flex-start","kind":null,"name":"align_items"},{"default":"row","kind":null,"name":"flex_direction"},{"default":"wrap","kind":null,"name":"flex_wrap"},{"default":"flex-start","kind":null,"name":"justify_content"}]},{"extends":null,"module":null,"name":"TemplateActions1","overrides":[],"properties":[{"default":0,"kind":null,"name":"open_modal"},{"default":0,"kind":null,"name":"close_modal"}]},{"extends":null,"module":null,"name":"MaterialTemplateActions1","overrides":[],"properties":[{"default":0,"kind":null,"name":"open_modal"},{"default":0,"kind":null,"name":"close_modal"}]}],"roots":{"references":[{"attributes":{},"id":"3666","type":"BasicTicker"},{"attributes":{"axis":{"id":"3640"},"dimension":1,"grid_line_color":null,"ticker":null},"id":"3642","type":"Grid"},{"attributes":{},"id":"3670","type":"CategoricalTickFormatter"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","syncable":false,"top_units":"screen"},"id":"3648","type":"BoxAnnotation"},{"attributes":{"fill_color":{"value":"orange"},"height":{"value":1},"line_alpha":{"value":0},"line_color":{"value":"orange"},"width":{"value":1},"x":{"field":"columns"},"y":{"field":"index"}},"id":"3663","type":"Rect"},{"attributes":{"callback":null,"renderers":[{"id":"3664"}],"tags":["hv_created"],"tooltips":[["columns","@{columns}"],["index","@{index}"],["value","@{value}"]]},"id":"3627","type":"HoverTool"},{"attributes":{"active_multi":null,"tools":[{"id":"3627"},{"id":"3643"},{"id":"3644"},{"id":"3645"},{"id":"3646"},{"id":"3647"}]},"id":"3649","type":"Toolbar"},{"attributes":{},"id":"3671","type":"AllLabels"},{"attributes":{},"id":"3644","type":"PanTool"},{"attributes":{},"id":"3641","type":"CategoricalTicker"},{"attributes":{},"id":"3673","type":"CategoricalTickFormatter"},{"attributes":{"children":[{"id":"3624"},{"id":"3628"},{"id":"3696"}],"margin":[0,0,0,0],"name":"Row04413","tags":["embedded"]},"id":"3623","type":"Row"},{"attributes":{},"id":"3633","type":"CategoricalScale"},{"attributes":{},"id":"3643","type":"SaveTool"},{"attributes":{},"id":"3645","type":"WheelZoomTool"},{"attributes":{"below":[{"id":"3637"}],"center":[{"id":"3639"},{"id":"3642"}],"height":300,"left":[{"id":"3640"}],"margin":[5,5,5,5],"min_border_bottom":10,"min_border_left":10,"min_border_right":10,"min_border_top":10,"renderers":[{"id":"3664"}],"right":[{"id":"3667"}],"sizing_mode":"fixed","title":{"id":"3629"},"toolbar":{"id":"3649"},"width":700,"x_range":{"id":"3625"},"x_scale":{"id":"3633"},"y_range":{"id":"3626"},"y_scale":{"id":"3635"}},"id":"3628","subtype":"Figure","type":"Plot"},{"attributes":{"fill_color":{"field":"zvalues","transform":{"id":"3656"}},"height":{"value":1},"line_alpha":{"value":0},"line_color":{"value":"#1f77b4"},"width":{"value":1},"x":{"field":"columns"},"y":{"field":"index"}},"id":"3660","type":"Rect"},{"attributes":{"overlay":{"id":"3648"}},"id":"3646","type":"BoxZoomTool"},{"attributes":{"data_source":{"id":"3657"},"glyph":{"id":"3660"},"hover_glyph":{"id":"3663"},"muted_glyph":null,"nonselection_glyph":{"id":"3661"},"selection_glyph":{"id":"3662"},"view":{"id":"3665"}},"id":"3664","type":"GlyphRenderer"},{"attributes":{"factors":["USDT","BTC","ZEC","LTC","DASH","ETH","XLM","XRP"],"tags":[[["index","index",null]]]},"id":"3626","type":"FactorRange"},{"attributes":{"fill_color":{"field":"zvalues","transform":{"id":"3656"}},"height":{"value":1},"line_alpha":{"value":0},"line_color":{"value":"#1f77b4"},"width":{"value":1},"x":{"field":"columns"},"y":{"field":"index"}},"id":"3662","type":"Rect"},{"attributes":{},"id":"3683","type":"UnionRenderers"},{"attributes":{"margin":[5,5,5,5],"name":"HSpacer04418","sizing_mode":"stretch_width"},"id":"3696","type":"Spacer"},{"attributes":{},"id":"3635","type":"CategoricalScale"},{"attributes":{"high":2.5825031724152976,"low":0.04823048259455494,"nan_color":"white","palette":["#b3fef5","#b0fef5","#adfdf5","#a9fcf5","#a6fbf6","#a3faf6","#a0faf6","#9df9f6","#9af8f6","#97f7f6","#93f7f6","#90f6f6","#8df5f6","#8af4f7","#87f3f7","#83f2f7","#80f2f7","#7df1f7","#79f0f7","#76eff7","#73eef7","#6fedf8","#6cecf8","#68ecf8","#65ebf8","#61eaf8","#5ee9f8","#5ae8f8","#57e7f8","#53e6f8","#50e5f9","#4ce4f9","#49e3f9","#45e2f9","#42e1f9","#3ee0f9","#3bdff9","#38def9","#35ddf9","#32dcf9","#30dbfa","#2ed9fa","#2dd8fa","#2cd7fa","#2bd6fa","#2bd5fa","#2ad3fa","#2ad2fa","#29d1fa","#29d0fb","#29cffb","#28cdfb","#28ccfb","#28cbfb","#28cafb","#28c8fb","#28c7fb","#29c6fb","#29c5fb","#29c4fb","#29c2fb","#2ac1fb","#2ac0fb","#2bbffb","#2bbdfc","#2cbcfc","#2dbbfc","#2db9fc","#2eb8fc","#2fb7fc","#2fb6fc","#30b4fc","#31b3fc","#32b2fc","#32b0fc","#33affc","#33aefc","#34adfc","#34abfc","#34aafc","#35a9fc","#35a8fc","#35a6fc","#35a5fc","#35a4fc","#35a3fc","#35a1fc","#35a0fc","#359ffc","#359dfc","#359cfc","#359bfc","#349afd","#3498fd","#3497fd","#3396fd","#3395fd","#3293fd","#3292fd","#3191fd","#3090fd","#308ffd","#2f8dfd","#2f8cfd","#2e8bfd","#2e8afd","#2d88fd","#2d87fd","#2c86fd","#2c84fd","#2c83fd","#2c82fd","#2b81fd","#2b7ffd","#2b7efd","#2b7dfd","#2b7bfd","#2b7afd","#2b79fd","#2b77fd","#2b76fd","#2b75fd","#2b73fd","#2c72fd","#2c71fd","#2c6ffd","#2c6efd","#2d6cfd","#2d6bfd","#2d6afc","#2e68fc","#2e67fc","#2e65fc","#2e64fc","#2f62fc","#2f61fc","#2f5ffc","#2f5efc","#2f5dfc","#2f5bfc","#2f5afc","#2f58fb","#2f57fb","#2f55fb","#2f53fb","#2f52fb","#2f50fb","#2f4ffb","#2f4dfb","#2e4cfb","#2e4afb","#2e48fb","#2e47fa","#2d45fa","#2d43fa","#2d42fa","#2d40fa","#2c3efa","#2c3dfa","#2b3bf9","#2b39f9","#2a37f9","#2a36f8","#2934f8","#2832f7","#2831f7","#272ff6","#262ef5","#252cf5","#252af4","#2429f3","#2327f2","#2226f1","#2124f0","#2023ef","#1f22ee","#1e20ed","#1d1feb","#1c1eea","#1b1ce9","#1a1be7","#181ae6","#1719e5","#1618e3","#1417e1","#1316e0","#1215de","#1014dc","#0f13db","#0e12d9","#0d11d7","#0c10d5","#0b0fd3","#0a0ed1","#090dd0","#080dce","#080ccc","#070bca","#070ac8","#0709c6","#0708c4","#0707c2","#0707bf","#0806bd","#0806bb","#0905b9","#0904b7","#0a04b5","#0a04b2","#0b03b0","#0c03ae","#0d02ab","#0e02a9","#0e02a7","#0f02a4","#0f01a2","#1001a0","#10019d","#10019b","#100199","#100197","#100194","#0f0192","#0f0190","#0f018e","#0e018b","#0e0189","#0d0187","#0d0185","#0c0183","#0b0181","#0b017e","#0a017c","#09017a","#090178","#080276","#070274","#060272","#060270","#05026e","#04026c","#030269","#030267","#020265","#010263","#010261","#00025f","#00025d","#00025b","#000259","#000257","#000255","#000154","#000152","#000150","#00004e"]},"id":"3656","type":"LinearColorMapper"},{"attributes":{},"id":"3647","type":"ResetTool"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"field":"zvalues","transform":{"id":"3656"}},"height":{"value":1},"line_alpha":{"value":0},"line_color":{"value":"#1f77b4"},"width":{"value":1},"x":{"field":"columns"},"y":{"field":"index"}},"id":"3661","type":"Rect"},{"attributes":{"source":{"id":"3657"}},"id":"3665","type":"CDSView"},{"attributes":{"axis_label":"","formatter":{"id":"3670"},"major_label_policy":{"id":"3668"},"ticker":{"id":"3638"}},"id":"3637","type":"CategoricalAxis"},{"attributes":{},"id":"3638","type":"CategoricalTicker"},{"attributes":{},"id":"3668","type":"AllLabels"},{"attributes":{"text":"2017 Heatmap: Standard Deviation of Selected Cryptocurrencies","text_color":"black","text_font_size":"12pt"},"id":"3629","type":"Title"},{"attributes":{"margin":[5,5,5,5],"name":"HSpacer04417","sizing_mode":"stretch_width"},"id":"3624","type":"Spacer"},{"attributes":{"bar_line_color":"black","color_mapper":{"id":"3656"},"label_standoff":8,"location":[0,0],"major_label_policy":{"id":"3681"},"major_tick_line_color":"black","ticker":{"id":"3666"}},"id":"3667","type":"ColorBar"},{"attributes":{"data":{"columns":["std","std","std","std","std","std","std","std"],"index":["USDT","BTC","ZEC","LTC","DASH","ETH","XLM","XRP"],"value":["0.04823","0.27753","0.51233","0.5703","0.65802","0.77915","2.3113","2.5825"],"zvalues":{"__ndarray__":"GuzTcqqxqD9juMMF/MLRP/h2uIABZeA/mdWSj+0/4j+5cidGhg7lP2UW0FXK7ug/j7jP1oR9AkA5uFps96gEQA==","dtype":"float64","order":"little","shape":[8]}},"selected":{"id":"3658"},"selection_policy":{"id":"3683"}},"id":"3657","type":"ColumnDataSource"},{"attributes":{},"id":"3681","type":"NoOverlap"},{"attributes":{},"id":"3658","type":"Selection"},{"attributes":{"axis":{"id":"3637"},"grid_line_color":null,"ticker":null},"id":"3639","type":"Grid"},{"attributes":{"factors":["std"],"tags":[[["columns","columns",null]]]},"id":"3625","type":"FactorRange"},{"attributes":{"axis_label":"Cryptocurrency","formatter":{"id":"3673"},"major_label_policy":{"id":"3671"},"ticker":{"id":"3641"}},"id":"3640","type":"CategoricalAxis"}],"root_ids":["3623"]},"title":"Bokeh Application","version":"2.3.2"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('3764').textContent;
+                  var render_items = [{"docid":"a91442c8-95bc-495b-804d-fac6afafcadc","root_ids":["3623"],"roots":{"3623":"1e0ab24f-7c9a-4c96-b132-75f57990940c"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>corr_heatmap_2017</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.3.2.min.js"></script>
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.3.2.min.js"></script>
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.3.2.min.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/@holoviz/panel@^0.12.0/dist/panel.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="49c8c58e-11d7-4242-8612-7a57b1336d77" data-root-id="2533"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="2673">
+          {"dfd1c6a0-77fd-4be4-bf89-acaa057492ba":{"defs":[{"extends":null,"module":null,"name":"ReactiveHTML1","overrides":[],"properties":[]},{"extends":null,"module":null,"name":"FlexBox1","overrides":[],"properties":[{"default":"flex-start","kind":null,"name":"align_content"},{"default":"flex-start","kind":null,"name":"align_items"},{"default":"row","kind":null,"name":"flex_direction"},{"default":"wrap","kind":null,"name":"flex_wrap"},{"default":"flex-start","kind":null,"name":"justify_content"}]},{"extends":null,"module":null,"name":"TemplateActions1","overrides":[],"properties":[{"default":0,"kind":null,"name":"open_modal"},{"default":0,"kind":null,"name":"close_modal"}]},{"extends":null,"module":null,"name":"MaterialTemplateActions1","overrides":[],"properties":[{"default":0,"kind":null,"name":"open_modal"},{"default":0,"kind":null,"name":"close_modal"}]}],"roots":{"references":[{"attributes":{},"id":"2553","type":"SaveTool"},{"attributes":{"bar_line_color":"black","color_mapper":{"id":"2566"},"label_standoff":8,"location":[0,0],"major_label_policy":{"id":"2590"},"major_tick_line_color":"black","ticker":{"id":"2575"}},"id":"2576","type":"ColorBar"},{"attributes":{},"id":"2554","type":"PanTool"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"field":"zvalues","transform":{"id":"2566"}},"height":{"value":1},"line_alpha":{"value":0},"line_color":{"value":"#1f77b4"},"width":{"value":1},"x":{"field":"columns"},"y":{"field":"index"}},"id":"2571","type":"Rect"},{"attributes":{"axis_label":"","formatter":{"id":"2578"},"major_label_policy":{"id":"2577"},"ticker":{"id":"2548"}},"id":"2547","type":"CategoricalAxis"},{"attributes":{},"id":"2555","type":"WheelZoomTool"},{"attributes":{"fill_color":{"field":"zvalues","transform":{"id":"2566"}},"height":{"value":1},"line_alpha":{"value":0},"line_color":{"value":"#1f77b4"},"width":{"value":1},"x":{"field":"columns"},"y":{"field":"index"}},"id":"2572","type":"Rect"},{"attributes":{"fill_color":{"field":"zvalues","transform":{"id":"2566"}},"height":{"value":1},"line_alpha":{"value":0},"line_color":{"value":"#1f77b4"},"width":{"value":1},"x":{"field":"columns"},"y":{"field":"index"}},"id":"2570","type":"Rect"},{"attributes":{"data_source":{"id":"2567"},"glyph":{"id":"2570"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"2571"},"selection_glyph":{"id":"2572"},"view":{"id":"2574"}},"id":"2573","type":"GlyphRenderer"},{"attributes":{"overlay":{"id":"2558"}},"id":"2556","type":"BoxZoomTool"},{"attributes":{"callback":null,"renderers":[{"id":"2573"}],"tags":["hv_created"],"tooltips":[["columns","@{columns}"],["index","@{index}"],["value","@{value}"]]},"id":"2537","type":"HoverTool"},{"attributes":{},"id":"2568","type":"Selection"},{"attributes":{"axis":{"id":"2550"},"dimension":1,"grid_line_color":null,"ticker":null},"id":"2552","type":"Grid"},{"attributes":{"source":{"id":"2567"}},"id":"2574","type":"CDSView"},{"attributes":{},"id":"2545","type":"CategoricalScale"},{"attributes":{"margin":[5,5,5,5],"name":"HSpacer03502","sizing_mode":"stretch_width"},"id":"2534","type":"Spacer"},{"attributes":{},"id":"2575","type":"BasicTicker"},{"attributes":{},"id":"2557","type":"ResetTool"},{"attributes":{},"id":"2543","type":"CategoricalScale"},{"attributes":{"text_color":"black","text_font_size":"12pt"},"id":"2539","type":"Title"},{"attributes":{},"id":"2578","type":"CategoricalTickFormatter"},{"attributes":{},"id":"2548","type":"CategoricalTicker"},{"attributes":{"axis":{"id":"2547"},"grid_line_color":null,"ticker":null},"id":"2549","type":"Grid"},{"attributes":{},"id":"2577","type":"AllLabels"},{"attributes":{},"id":"2580","type":"AllLabels"},{"attributes":{"below":[{"id":"2547"}],"center":[{"id":"2549"},{"id":"2552"}],"height":300,"left":[{"id":"2550"}],"margin":[5,5,5,5],"min_border_bottom":10,"min_border_left":10,"min_border_right":10,"min_border_top":10,"renderers":[{"id":"2573"}],"right":[{"id":"2576"}],"sizing_mode":"fixed","title":{"id":"2539"},"toolbar":{"id":"2559"},"width":700,"x_range":{"id":"2535"},"x_scale":{"id":"2543"},"y_range":{"id":"2536"},"y_scale":{"id":"2545"}},"id":"2538","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"2551","type":"CategoricalTicker"},{"attributes":{"axis_label":"","formatter":{"id":"2581"},"major_label_policy":{"id":"2580"},"ticker":{"id":"2551"}},"id":"2550","type":"CategoricalAxis"},{"attributes":{"factors":["BTC_Monthly_Close","ETH_Monthly_Close","LTC_Monthly_Close","USDT_Monthly_Close","XLM_Monthly_Close","XRP_Monthly_Close","ZEC_Monthly_Close","DASH_Monthly_Close"],"tags":[[["index","index",null]]]},"id":"2536","type":"FactorRange"},{"attributes":{},"id":"2581","type":"CategoricalTickFormatter"},{"attributes":{},"id":"2590","type":"NoOverlap"},{"attributes":{"high":1.0,"low":-0.33663168099316915,"nan_color":"white","palette":["#b3fef5","#b0fef5","#adfdf5","#a9fcf5","#a6fbf6","#a3faf6","#a0faf6","#9df9f6","#9af8f6","#97f7f6","#93f7f6","#90f6f6","#8df5f6","#8af4f7","#87f3f7","#83f2f7","#80f2f7","#7df1f7","#79f0f7","#76eff7","#73eef7","#6fedf8","#6cecf8","#68ecf8","#65ebf8","#61eaf8","#5ee9f8","#5ae8f8","#57e7f8","#53e6f8","#50e5f9","#4ce4f9","#49e3f9","#45e2f9","#42e1f9","#3ee0f9","#3bdff9","#38def9","#35ddf9","#32dcf9","#30dbfa","#2ed9fa","#2dd8fa","#2cd7fa","#2bd6fa","#2bd5fa","#2ad3fa","#2ad2fa","#29d1fa","#29d0fb","#29cffb","#28cdfb","#28ccfb","#28cbfb","#28cafb","#28c8fb","#28c7fb","#29c6fb","#29c5fb","#29c4fb","#29c2fb","#2ac1fb","#2ac0fb","#2bbffb","#2bbdfc","#2cbcfc","#2dbbfc","#2db9fc","#2eb8fc","#2fb7fc","#2fb6fc","#30b4fc","#31b3fc","#32b2fc","#32b0fc","#33affc","#33aefc","#34adfc","#34abfc","#34aafc","#35a9fc","#35a8fc","#35a6fc","#35a5fc","#35a4fc","#35a3fc","#35a1fc","#35a0fc","#359ffc","#359dfc","#359cfc","#359bfc","#349afd","#3498fd","#3497fd","#3396fd","#3395fd","#3293fd","#3292fd","#3191fd","#3090fd","#308ffd","#2f8dfd","#2f8cfd","#2e8bfd","#2e8afd","#2d88fd","#2d87fd","#2c86fd","#2c84fd","#2c83fd","#2c82fd","#2b81fd","#2b7ffd","#2b7efd","#2b7dfd","#2b7bfd","#2b7afd","#2b79fd","#2b77fd","#2b76fd","#2b75fd","#2b73fd","#2c72fd","#2c71fd","#2c6ffd","#2c6efd","#2d6cfd","#2d6bfd","#2d6afc","#2e68fc","#2e67fc","#2e65fc","#2e64fc","#2f62fc","#2f61fc","#2f5ffc","#2f5efc","#2f5dfc","#2f5bfc","#2f5afc","#2f58fb","#2f57fb","#2f55fb","#2f53fb","#2f52fb","#2f50fb","#2f4ffb","#2f4dfb","#2e4cfb","#2e4afb","#2e48fb","#2e47fa","#2d45fa","#2d43fa","#2d42fa","#2d40fa","#2c3efa","#2c3dfa","#2b3bf9","#2b39f9","#2a37f9","#2a36f8","#2934f8","#2832f7","#2831f7","#272ff6","#262ef5","#252cf5","#252af4","#2429f3","#2327f2","#2226f1","#2124f0","#2023ef","#1f22ee","#1e20ed","#1d1feb","#1c1eea","#1b1ce9","#1a1be7","#181ae6","#1719e5","#1618e3","#1417e1","#1316e0","#1215de","#1014dc","#0f13db","#0e12d9","#0d11d7","#0c10d5","#0b0fd3","#0a0ed1","#090dd0","#080dce","#080ccc","#070bca","#070ac8","#0709c6","#0708c4","#0707c2","#0707bf","#0806bd","#0806bb","#0905b9","#0904b7","#0a04b5","#0a04b2","#0b03b0","#0c03ae","#0d02ab","#0e02a9","#0e02a7","#0f02a4","#0f01a2","#1001a0","#10019d","#10019b","#100199","#100197","#100194","#0f0192","#0f0190","#0f018e","#0e018b","#0e0189","#0d0187","#0d0185","#0c0183","#0b0181","#0b017e","#0a017c","#09017a","#090178","#080276","#070274","#060272","#060270","#05026e","#04026c","#030269","#030267","#020265","#010263","#010261","#00025f","#00025d","#00025b","#000259","#000257","#000255","#000154","#000152","#000150","#00004e"]},"id":"2566","type":"LinearColorMapper"},{"attributes":{},"id":"2593","type":"UnionRenderers"},{"attributes":{"margin":[5,5,5,5],"name":"HSpacer03503","sizing_mode":"stretch_width"},"id":"2605","type":"Spacer"},{"attributes":{"active_multi":null,"tools":[{"id":"2537"},{"id":"2553"},{"id":"2554"},{"id":"2555"},{"id":"2556"},{"id":"2557"}]},"id":"2559","type":"Toolbar"},{"attributes":{"data":{"columns":["BTC_Monthly_Close","BTC_Monthly_Close","BTC_Monthly_Close","BTC_Monthly_Close","BTC_Monthly_Close","BTC_Monthly_Close","BTC_Monthly_Close","BTC_Monthly_Close","ETH_Monthly_Close","ETH_Monthly_Close","ETH_Monthly_Close","ETH_Monthly_Close","ETH_Monthly_Close","ETH_Monthly_Close","ETH_Monthly_Close","ETH_Monthly_Close","LTC_Monthly_Close","LTC_Monthly_Close","LTC_Monthly_Close","LTC_Monthly_Close","LTC_Monthly_Close","LTC_Monthly_Close","LTC_Monthly_Close","LTC_Monthly_Close","USDT_Monthly_Close","USDT_Monthly_Close","USDT_Monthly_Close","USDT_Monthly_Close","USDT_Monthly_Close","USDT_Monthly_Close","USDT_Monthly_Close","USDT_Monthly_Close","XLM_Monthly_Close","XLM_Monthly_Close","XLM_Monthly_Close","XLM_Monthly_Close","XLM_Monthly_Close","XLM_Monthly_Close","XLM_Monthly_Close","XLM_Monthly_Close","XRP_Monthly_Close","XRP_Monthly_Close","XRP_Monthly_Close","XRP_Monthly_Close","XRP_Monthly_Close","XRP_Monthly_Close","XRP_Monthly_Close","XRP_Monthly_Close","ZEC_Monthly_Close","ZEC_Monthly_Close","ZEC_Monthly_Close","ZEC_Monthly_Close","ZEC_Monthly_Close","ZEC_Monthly_Close","ZEC_Monthly_Close","ZEC_Monthly_Close","DASH_Monthly_Close","DASH_Monthly_Close","DASH_Monthly_Close","DASH_Monthly_Close","DASH_Monthly_Close","DASH_Monthly_Close","DASH_Monthly_Close","DASH_Monthly_Close"],"index":["BTC_Monthly_Close","ETH_Monthly_Close","LTC_Monthly_Close","USDT_Monthly_Close","XLM_Monthly_Close","XRP_Monthly_Close","ZEC_Monthly_Close","DASH_Monthly_Close","BTC_Monthly_Close","ETH_Monthly_Close","LTC_Monthly_Close","USDT_Monthly_Close","XLM_Monthly_Close","XRP_Monthly_Close","ZEC_Monthly_Close","DASH_Monthly_Close","BTC_Monthly_Close","ETH_Monthly_Close","LTC_Monthly_Close","USDT_Monthly_Close","XLM_Monthly_Close","XRP_Monthly_Close","ZEC_Monthly_Close","DASH_Monthly_Close","BTC_Monthly_Close","ETH_Monthly_Close","LTC_Monthly_Close","USDT_Monthly_Close","XLM_Monthly_Close","XRP_Monthly_Close","ZEC_Monthly_Close","DASH_Monthly_Close","BTC_Monthly_Close","ETH_Monthly_Close","LTC_Monthly_Close","USDT_Monthly_Close","XLM_Monthly_Close","XRP_Monthly_Close","ZEC_Monthly_Close","DASH_Monthly_Close","BTC_Monthly_Close","ETH_Monthly_Close","LTC_Monthly_Close","USDT_Monthly_Close","XLM_Monthly_Close","XRP_Monthly_Close","ZEC_Monthly_Close","DASH_Monthly_Close","BTC_Monthly_Close","ETH_Monthly_Close","LTC_Monthly_Close","USDT_Monthly_Close","XLM_Monthly_Close","XRP_Monthly_Close","ZEC_Monthly_Close","DASH_Monthly_Close","BTC_Monthly_Close","ETH_Monthly_Close","LTC_Monthly_Close","USDT_Monthly_Close","XLM_Monthly_Close","XRP_Monthly_Close","ZEC_Monthly_Close","DASH_Monthly_Close"],"value":["1","0.93287","0.93785","0.4924","-0.33663","0.82049","0.83963","0.98043","0.93287","1","0.94897","0.66792","-0.12005","0.84465","0.97166","0.94816","0.93785","0.94897","1","0.48148","-0.24706","0.95181","0.87072","0.93838","0.4924","0.66792","0.48148","1","0.2938","0.34291","0.75712","0.54052","-0.33663","-0.12005","-0.24706","0.2938","1","-0.11863","0.04971","-0.29326","0.82049","0.84465","0.95181","0.34291","-0.11863","1","0.7731","0.80993","0.83963","0.97166","0.87072","0.75712","0.04971","0.7731","1","0.86978","0.98043","0.94816","0.93838","0.54052","-0.29326","0.80993","0.86978","1"],"zvalues":{"__ndarray__":"AAAAAAAA8D8SQdEVCtrtP5VUvALXAu4/mWL8dneD3z9RcSqbX4vVv5UAIpV4Qeo/V5MuKELe6j9MAnmis1/vPxJB0RUK2u0/AAAAAAAA8D9aGSG/9F3uPxhW2U6hX+U/vQF+0oe7vr+yoSaHXgfrP9cfJPLbF+8/G4T/flFX7j+VVLwC1wLuP1oZIb/0Xe4/AAAAAAAA8D9k0FrcpdDePzuhZM+Bn8+/uUPXqDh17j+khrWM5tzrP/vLxP4rB+4/mWL8dneD3z8YVtlOoV/lP2TQWtyl0N4/AAAAAAAA8D95RBB1os3SP/7vbulD8tU/Fn5f9lY66D90YuOB6EvhP1FxKptfi9W/vQF+0oe7vr87oWTPgZ/Pv3lEEHWizdI/AAAAAAAA8D/Jpz3XPF6+v3ud3qSXc6k/ISw9wNnE0r+VACKVeEHqP7KhJodeB+s/uUPXqDh17j/+727pQ/LVP8mnPdc8Xr6/AAAAAAAA8D8DqsRROL3oP5G3ta3x6uk/V5MuKELe6j/XHyTy2xfvP6SGtYzm3Os/Fn5f9lY66D97nd6kl3OpPwOqxFE4veg/AAAAAAAA8D8HDkuuRtXrP0wCeaKzX+8/G4T/flFX7j/7y8T+KwfuP3Ri44HoS+E/ISw9wNnE0r+Rt7Wt8erpPwcOS65G1es/AAAAAAAA8D8=","dtype":"float64","order":"little","shape":[64]}},"selected":{"id":"2568"},"selection_policy":{"id":"2593"}},"id":"2567","type":"ColumnDataSource"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","syncable":false,"top_units":"screen"},"id":"2558","type":"BoxAnnotation"},{"attributes":{"factors":["BTC_Monthly_Close","ETH_Monthly_Close","LTC_Monthly_Close","USDT_Monthly_Close","XLM_Monthly_Close","XRP_Monthly_Close","ZEC_Monthly_Close","DASH_Monthly_Close"],"tags":[[["columns","columns",null]]]},"id":"2535","type":"FactorRange"},{"attributes":{"children":[{"id":"2534"},{"id":"2538"},{"id":"2605"}],"margin":[0,0,0,0],"name":"Row03498","tags":["embedded"]},"id":"2533","type":"Row"}],"root_ids":["2533"]},"title":"Bokeh Application","version":"2.3.2"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('2673').textContent;
+                  var render_items = [{"docid":"dfd1c6a0-77fd-4be4-bf89-acaa057492ba","root_ids":["2533"],"roots":{"2533":"49c8c58e-11d7-4242-8612-7a57b1336d77"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>beta_2017_exc_btc_bar</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.3.2.min.js"></script>
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.3.2.min.js"></script>
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.3.2.min.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/@holoviz/panel@^0.12.0/dist/panel.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="935de171-b271-4b25-bc25-4db9dabfdea9" data-root-id="3887"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="4019">
+          {"a2ee471f-b9e6-4720-9ba8-d716c9694110":{"defs":[{"extends":null,"module":null,"name":"ReactiveHTML1","overrides":[],"properties":[]},{"extends":null,"module":null,"name":"FlexBox1","overrides":[],"properties":[{"default":"flex-start","kind":null,"name":"align_content"},{"default":"flex-start","kind":null,"name":"align_items"},{"default":"row","kind":null,"name":"flex_direction"},{"default":"wrap","kind":null,"name":"flex_wrap"},{"default":"flex-start","kind":null,"name":"justify_content"}]},{"extends":null,"module":null,"name":"TemplateActions1","overrides":[],"properties":[{"default":0,"kind":null,"name":"open_modal"},{"default":0,"kind":null,"name":"close_modal"}]},{"extends":null,"module":null,"name":"MaterialTemplateActions1","overrides":[],"properties":[{"default":0,"kind":null,"name":"open_modal"},{"default":0,"kind":null,"name":"close_modal"}]}],"roots":{"references":[{"attributes":{"factors":["XLM","LTC","ETH","USDT","ZEC","DASH","XRP"],"tags":[[["index","index",null]]]},"id":"3889","type":"FactorRange"},{"attributes":{"active_multi":null,"tools":[{"id":"3891"},{"id":"3908"},{"id":"3909"},{"id":"3910"},{"id":"3911"},{"id":"3912"}]},"id":"3914","type":"Toolbar"},{"attributes":{"data":{"beta":{"__ndarray__":"ZxknRYx4uj+uFEtNA4jjP1q+N7Kl+uU/THvnzs+36z+YQk1ws6fuP65+v9lYbPY/ksyBjWMTG0A=","dtype":"float64","order":"little","shape":[7]},"index":["XLM","LTC","ETH","USDT","ZEC","DASH","XRP"]},"selected":{"id":"3922"},"selection_policy":{"id":"3945"}},"id":"3921","type":"ColumnDataSource"},{"attributes":{},"id":"3934","type":"AllLabels"},{"attributes":{"children":[{"id":"3888"},{"id":"3892"},{"id":"3957"}],"margin":[0,0,0,0],"name":"Row04665","tags":["embedded"]},"id":"3887","type":"Row"},{"attributes":{},"id":"3933","type":"CategoricalTickFormatter"},{"attributes":{"callback":null,"renderers":[{"id":"3928"}],"tags":["hv_created"],"tooltips":[["index","@{index}"],["beta","@{beta}"]]},"id":"3891","type":"HoverTool"},{"attributes":{"axis_label":"Cryptocurrency","formatter":{"id":"3933"},"major_label_policy":{"id":"3931"},"ticker":{"id":"3902"}},"id":"3901","type":"CategoricalAxis"},{"attributes":{"data_source":{"id":"3921"},"glyph":{"id":"3924"},"hover_glyph":{"id":"3926"},"muted_glyph":{"id":"3927"},"nonselection_glyph":{"id":"3925"},"selection_glyph":{"id":"3930"},"view":{"id":"3929"}},"id":"3928","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.2},"fill_color":{"value":"cyan"},"line_alpha":{"value":0.2},"top":{"field":"beta"},"width":{"value":0.8},"x":{"field":"index"}},"id":"3927","type":"VBar"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"cyan"},"line_alpha":{"value":0.1},"top":{"field":"beta"},"width":{"value":0.8},"x":{"field":"index"}},"id":"3925","type":"VBar"},{"attributes":{"axis":{"id":"3904"},"dimension":1,"grid_line_color":null,"ticker":null},"id":"3907","type":"Grid"},{"attributes":{"fill_color":{"value":"cyan"},"top":{"field":"beta"},"width":{"value":0.8},"x":{"field":"index"}},"id":"3924","type":"VBar"},{"attributes":{},"id":"3908","type":"SaveTool"},{"attributes":{},"id":"3912","type":"ResetTool"},{"attributes":{"below":[{"id":"3901"}],"center":[{"id":"3903"},{"id":"3907"}],"height":300,"left":[{"id":"3904"}],"margin":[5,5,5,5],"min_border_bottom":10,"min_border_left":10,"min_border_right":10,"min_border_top":10,"renderers":[{"id":"3928"}],"sizing_mode":"fixed","title":{"id":"3893"},"toolbar":{"id":"3914"},"width":700,"x_range":{"id":"3889"},"x_scale":{"id":"3897"},"y_range":{"id":"3890"},"y_scale":{"id":"3899"}},"id":"3892","subtype":"Figure","type":"Plot"},{"attributes":{"fill_color":{"value":"black"},"top":{"field":"beta"},"width":{"value":0.8},"x":{"field":"index"}},"id":"3926","type":"VBar"},{"attributes":{},"id":"3902","type":"CategoricalTicker"},{"attributes":{"margin":[5,5,5,5],"name":"HSpacer04670","sizing_mode":"stretch_width"},"id":"3957","type":"Spacer"},{"attributes":{},"id":"3931","type":"AllLabels"},{"attributes":{"overlay":{"id":"3913"}},"id":"3911","type":"BoxZoomTool"},{"attributes":{},"id":"3922","type":"Selection"},{"attributes":{},"id":"3897","type":"CategoricalScale"},{"attributes":{},"id":"3909","type":"PanTool"},{"attributes":{},"id":"3905","type":"BasicTicker"},{"attributes":{},"id":"3910","type":"WheelZoomTool"},{"attributes":{},"id":"3936","type":"BasicTickFormatter"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","syncable":false,"top_units":"screen"},"id":"3913","type":"BoxAnnotation"},{"attributes":{},"id":"3899","type":"LinearScale"},{"attributes":{"source":{"id":"3921"}},"id":"3929","type":"CDSView"},{"attributes":{},"id":"3945","type":"UnionRenderers"},{"attributes":{"axis":{"id":"3901"},"grid_line_color":null,"ticker":null},"id":"3903","type":"Grid"},{"attributes":{"bottom":{"value":0},"fill_alpha":{"value":1.0},"fill_color":{"value":"cyan"},"hatch_alpha":{"value":1.0},"hatch_color":{"value":"black"},"hatch_scale":{"value":12.0},"hatch_weight":{"value":1.0},"line_alpha":{"value":1.0},"line_cap":{"value":"butt"},"line_color":{"value":"black"},"line_dash":{"value":[]},"line_dash_offset":{"value":0},"line_join":{"value":"bevel"},"line_width":{"value":1},"top":{"field":"beta"},"width":{"value":0.8},"x":{"field":"index"}},"id":"3930","type":"VBar"},{"attributes":{"end":7.4354877047192955,"reset_end":7.4354877047192955,"reset_start":0.0,"tags":[[["beta","beta",null]]]},"id":"3890","type":"Range1d"},{"attributes":{"text":"2017 Bar: Beta relative to Bitcoin","text_color":"black","text_font_size":"12pt"},"id":"3893","type":"Title"},{"attributes":{"margin":[5,5,5,5],"name":"HSpacer04669","sizing_mode":"stretch_width"},"id":"3888","type":"Spacer"},{"attributes":{"axis_label":"Beta Value","formatter":{"id":"3936"},"major_label_policy":{"id":"3934"},"ticker":{"id":"3905"}},"id":"3904","type":"LinearAxis"}],"root_ids":["3887"]},"title":"Bokeh Application","version":"2.3.2"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('4019').textContent;
+                  var render_items = [{"docid":"a2ee471f-b9e6-4720-9ba8-d716c9694110","root_ids":["3887"],"roots":{"3887":"935de171-b271-4b25-bc25-4db9dabfdea9"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>beta_2017_exc_btc_heat</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.3.2.min.js"></script>
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.3.2.min.js"></script>
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.3.2.min.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/@holoviz/panel@^0.12.0/dist/panel.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="e8125b65-9e82-4ff0-bc9d-8909106cbe3d" data-root-id="4150"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="4291">
+          {"5094c326-4c73-406b-890b-c005ae47a4a1":{"defs":[{"extends":null,"module":null,"name":"ReactiveHTML1","overrides":[],"properties":[]},{"extends":null,"module":null,"name":"FlexBox1","overrides":[],"properties":[{"default":"flex-start","kind":null,"name":"align_content"},{"default":"flex-start","kind":null,"name":"align_items"},{"default":"row","kind":null,"name":"flex_direction"},{"default":"wrap","kind":null,"name":"flex_wrap"},{"default":"flex-start","kind":null,"name":"justify_content"}]},{"extends":null,"module":null,"name":"TemplateActions1","overrides":[],"properties":[{"default":0,"kind":null,"name":"open_modal"},{"default":0,"kind":null,"name":"close_modal"}]},{"extends":null,"module":null,"name":"MaterialTemplateActions1","overrides":[],"properties":[{"default":0,"kind":null,"name":"open_modal"},{"default":0,"kind":null,"name":"close_modal"}]}],"roots":{"references":[{"attributes":{"text":"2017 Heatmap: Beta relative to Bitcoin","text_color":"black","text_font_size":"12pt"},"id":"4156","type":"Title"},{"attributes":{"axis":{"id":"4164"},"grid_line_color":null,"ticker":null},"id":"4166","type":"Grid"},{"attributes":{},"id":"4165","type":"CategoricalTicker"},{"attributes":{"factors":["XLM","LTC","ETH","USDT","ZEC","DASH","XRP"],"tags":[[["index","index",null]]]},"id":"4153","type":"FactorRange"},{"attributes":{},"id":"4168","type":"CategoricalTicker"},{"attributes":{"axis_label":"Cryptocurrency","formatter":{"id":"4200"},"major_label_policy":{"id":"4198"},"ticker":{"id":"4168"}},"id":"4167","type":"CategoricalAxis"},{"attributes":{},"id":"4200","type":"CategoricalTickFormatter"},{"attributes":{"data":{"columns":["beta","beta","beta","beta","beta","beta","beta"],"index":["XLM","LTC","ETH","USDT","ZEC","DASH","XRP"],"value":["0.1034","0.61035","0.68685","0.86619","0.95797","1.4015","6.7689"],"zvalues":{"__ndarray__":"ZxknRYx4uj+uFEtNA4jjP1q+N7Kl+uU/THvnzs+36z+YQk1ws6fuP65+v9lYbPY/ksyBjWMTG0A=","dtype":"float64","order":"little","shape":[7]}},"selected":{"id":"4185"},"selection_policy":{"id":"4210"}},"id":"4184","type":"ColumnDataSource"},{"attributes":{"bar_line_color":"black","color_mapper":{"id":"4183"},"label_standoff":8,"location":[0,0],"major_label_policy":{"id":"4208"},"major_tick_line_color":"black","ticker":{"id":"4193"}},"id":"4194","type":"ColorBar"},{"attributes":{"margin":[5,5,5,5],"name":"HSpacer04905","sizing_mode":"stretch_width"},"id":"4223","type":"Spacer"},{"attributes":{},"id":"4197","type":"CategoricalTickFormatter"},{"attributes":{"high":6.768934451148327,"low":0.10340191543864351,"nan_color":"white","palette":["#b3fef5","#b0fef5","#adfdf5","#a9fcf5","#a6fbf6","#a3faf6","#a0faf6","#9df9f6","#9af8f6","#97f7f6","#93f7f6","#90f6f6","#8df5f6","#8af4f7","#87f3f7","#83f2f7","#80f2f7","#7df1f7","#79f0f7","#76eff7","#73eef7","#6fedf8","#6cecf8","#68ecf8","#65ebf8","#61eaf8","#5ee9f8","#5ae8f8","#57e7f8","#53e6f8","#50e5f9","#4ce4f9","#49e3f9","#45e2f9","#42e1f9","#3ee0f9","#3bdff9","#38def9","#35ddf9","#32dcf9","#30dbfa","#2ed9fa","#2dd8fa","#2cd7fa","#2bd6fa","#2bd5fa","#2ad3fa","#2ad2fa","#29d1fa","#29d0fb","#29cffb","#28cdfb","#28ccfb","#28cbfb","#28cafb","#28c8fb","#28c7fb","#29c6fb","#29c5fb","#29c4fb","#29c2fb","#2ac1fb","#2ac0fb","#2bbffb","#2bbdfc","#2cbcfc","#2dbbfc","#2db9fc","#2eb8fc","#2fb7fc","#2fb6fc","#30b4fc","#31b3fc","#32b2fc","#32b0fc","#33affc","#33aefc","#34adfc","#34abfc","#34aafc","#35a9fc","#35a8fc","#35a6fc","#35a5fc","#35a4fc","#35a3fc","#35a1fc","#35a0fc","#359ffc","#359dfc","#359cfc","#359bfc","#349afd","#3498fd","#3497fd","#3396fd","#3395fd","#3293fd","#3292fd","#3191fd","#3090fd","#308ffd","#2f8dfd","#2f8cfd","#2e8bfd","#2e8afd","#2d88fd","#2d87fd","#2c86fd","#2c84fd","#2c83fd","#2c82fd","#2b81fd","#2b7ffd","#2b7efd","#2b7dfd","#2b7bfd","#2b7afd","#2b79fd","#2b77fd","#2b76fd","#2b75fd","#2b73fd","#2c72fd","#2c71fd","#2c6ffd","#2c6efd","#2d6cfd","#2d6bfd","#2d6afc","#2e68fc","#2e67fc","#2e65fc","#2e64fc","#2f62fc","#2f61fc","#2f5ffc","#2f5efc","#2f5dfc","#2f5bfc","#2f5afc","#2f58fb","#2f57fb","#2f55fb","#2f53fb","#2f52fb","#2f50fb","#2f4ffb","#2f4dfb","#2e4cfb","#2e4afb","#2e48fb","#2e47fa","#2d45fa","#2d43fa","#2d42fa","#2d40fa","#2c3efa","#2c3dfa","#2b3bf9","#2b39f9","#2a37f9","#2a36f8","#2934f8","#2832f7","#2831f7","#272ff6","#262ef5","#252cf5","#252af4","#2429f3","#2327f2","#2226f1","#2124f0","#2023ef","#1f22ee","#1e20ed","#1d1feb","#1c1eea","#1b1ce9","#1a1be7","#181ae6","#1719e5","#1618e3","#1417e1","#1316e0","#1215de","#1014dc","#0f13db","#0e12d9","#0d11d7","#0c10d5","#0b0fd3","#0a0ed1","#090dd0","#080dce","#080ccc","#070bca","#070ac8","#0709c6","#0708c4","#0707c2","#0707bf","#0806bd","#0806bb","#0905b9","#0904b7","#0a04b5","#0a04b2","#0b03b0","#0c03ae","#0d02ab","#0e02a9","#0e02a7","#0f02a4","#0f01a2","#1001a0","#10019d","#10019b","#100199","#100197","#100194","#0f0192","#0f0190","#0f018e","#0e018b","#0e0189","#0d0187","#0d0185","#0c0183","#0b0181","#0b017e","#0a017c","#09017a","#090178","#080276","#070274","#060272","#060270","#05026e","#04026c","#030269","#030267","#020265","#010263","#010261","#00025f","#00025d","#00025b","#000259","#000257","#000255","#000154","#000152","#000150","#00004e"]},"id":"4183","type":"LinearColorMapper"},{"attributes":{"source":{"id":"4184"}},"id":"4192","type":"CDSView"},{"attributes":{"axis":{"id":"4167"},"dimension":1,"grid_line_color":null,"ticker":null},"id":"4169","type":"Grid"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","syncable":false,"top_units":"screen"},"id":"4175","type":"BoxAnnotation"},{"attributes":{},"id":"4193","type":"BasicTicker"},{"attributes":{},"id":"4195","type":"AllLabels"},{"attributes":{"callback":null,"renderers":[{"id":"4191"}],"tags":["hv_created"],"tooltips":[["columns","@{columns}"],["index","@{index}"],["value","@{value}"]]},"id":"4154","type":"HoverTool"},{"attributes":{"axis_label":"","formatter":{"id":"4197"},"major_label_policy":{"id":"4195"},"ticker":{"id":"4165"}},"id":"4164","type":"CategoricalAxis"},{"attributes":{},"id":"4170","type":"SaveTool"},{"attributes":{},"id":"4185","type":"Selection"},{"attributes":{"margin":[5,5,5,5],"name":"HSpacer04904","sizing_mode":"stretch_width"},"id":"4151","type":"Spacer"},{"attributes":{},"id":"4171","type":"PanTool"},{"attributes":{"children":[{"id":"4151"},{"id":"4155"},{"id":"4223"}],"margin":[0,0,0,0],"name":"Row04900","tags":["embedded"]},"id":"4150","type":"Row"},{"attributes":{"factors":["beta"],"tags":[[["columns","columns",null]]]},"id":"4152","type":"FactorRange"},{"attributes":{},"id":"4172","type":"WheelZoomTool"},{"attributes":{"active_multi":null,"tools":[{"id":"4154"},{"id":"4170"},{"id":"4171"},{"id":"4172"},{"id":"4173"},{"id":"4174"}]},"id":"4176","type":"Toolbar"},{"attributes":{"below":[{"id":"4164"}],"center":[{"id":"4166"},{"id":"4169"}],"height":300,"left":[{"id":"4167"}],"margin":[5,5,5,5],"min_border_bottom":10,"min_border_left":10,"min_border_right":10,"min_border_top":10,"renderers":[{"id":"4191"}],"right":[{"id":"4194"}],"sizing_mode":"fixed","title":{"id":"4156"},"toolbar":{"id":"4176"},"width":700,"x_range":{"id":"4152"},"x_scale":{"id":"4160"},"y_range":{"id":"4153"},"y_scale":{"id":"4162"}},"id":"4155","subtype":"Figure","type":"Plot"},{"attributes":{"fill_color":{"field":"zvalues","transform":{"id":"4183"}},"height":{"value":1},"line_alpha":{"value":0},"line_color":{"value":"#1f77b4"},"width":{"value":1},"x":{"field":"columns"},"y":{"field":"index"}},"id":"4187","type":"Rect"},{"attributes":{"overlay":{"id":"4175"}},"id":"4173","type":"BoxZoomTool"},{"attributes":{},"id":"4198","type":"AllLabels"},{"attributes":{},"id":"4210","type":"UnionRenderers"},{"attributes":{"data_source":{"id":"4184"},"glyph":{"id":"4187"},"hover_glyph":{"id":"4190"},"muted_glyph":null,"nonselection_glyph":{"id":"4188"},"selection_glyph":{"id":"4189"},"view":{"id":"4192"}},"id":"4191","type":"GlyphRenderer"},{"attributes":{},"id":"4162","type":"CategoricalScale"},{"attributes":{},"id":"4174","type":"ResetTool"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"field":"zvalues","transform":{"id":"4183"}},"height":{"value":1},"line_alpha":{"value":0},"line_color":{"value":"#1f77b4"},"width":{"value":1},"x":{"field":"columns"},"y":{"field":"index"}},"id":"4188","type":"Rect"},{"attributes":{},"id":"4208","type":"NoOverlap"},{"attributes":{"fill_color":{"field":"zvalues","transform":{"id":"4183"}},"height":{"value":1},"line_alpha":{"value":0},"line_color":{"value":"#1f77b4"},"width":{"value":1},"x":{"field":"columns"},"y":{"field":"index"}},"id":"4189","type":"Rect"},{"attributes":{},"id":"4160","type":"CategoricalScale"},{"attributes":{"fill_color":{"value":"orange"},"height":{"value":1},"line_alpha":{"value":0},"line_color":{"value":"orange"},"width":{"value":1},"x":{"field":"columns"},"y":{"field":"index"}},"id":"4190","type":"Rect"}],"root_ids":["4150"]},"title":"Bokeh Application","version":"2.3.2"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('4291').textContent;
+                  var render_items = [{"docid":"5094c326-4c73-406b-890b-c005ae47a4a1","root_ids":["4150"],"roots":{"4150":"e8125b65-9e82-4ff0-bc9d-8909106cbe3d"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
+</html>
+
+{% endblock %}
