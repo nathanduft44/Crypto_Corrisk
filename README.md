@@ -75,6 +75,10 @@ Email: leotharada@gmail.com
 
 LinkedIn: https://www.linkedin.com/in/leo-harada-516248106/
 
+Email: nathan.duft@gmail.com
+
+LinkedIn: https://www.linkedin.com/in/nathan-duft-b746691a6/
+
 **License**
 
                 GNU GENERAL PUBLIC LICENSE
