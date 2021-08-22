@@ -5,13 +5,14 @@
 **Overview**
 
 Crypto currencies have recently been in the spotlight in today's financial world. We're seeing major adoption and capital investments pooring into the markets from financial institutions and retail investors all over the world. Since Bitcoin's creation in 2009, there are now a whopping 11,257 cryptocurrencies in the market!
+So far we have a website and some unique quantitative analysis. With the push of retail investors in the space and amount of speculation and noise with getting information we are providing a place for people to better understand the risk assiociated in crypto.
 
 **Objective**
 
 We want to create a bridge between legacy financial risk analysis with on-chain metrics. 
 To reach our goal, we're creating a mechanism for our users to measure potential risk based off our techincal analysis.
 This will allow users to make educated and well-informed decisions by evaluating historical price movements from the data provided in a user-friendly application.
-
+Our short term goal is to populate more of our finished work to our website. A few of our analysts will soon be reading data from a new API for crypto on-chain data to illustrate what is happening in the blockchain networks. We closely pay attenttion to the behavior of insitutional and whale money in the space by looking at on-chain data. A critical next step will be implementing a blog for people to interact on and share valuable insights.
 **Requirements**
 1) If only viewing and navigating through the website, only an internet connection is needed.
 2) If planning on cloning the repository and going through the worksheets of code, then the following are needed:
