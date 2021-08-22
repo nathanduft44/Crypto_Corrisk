@@ -7,6 +7,7 @@
 Crypto currencies have recently been in the spotlight in today's financial world. We're seeing major adoption and capital investments pooring into the markets from financial institutions and retail investors all over the world. Since Bitcoin's creation in 2009, there are now a whopping 11,257 cryptocurrencies in the market!
 
 **Objective**
+
 We want to create a bridge between legacy financial risk analysis with on-chain metrics. 
 To reach our goal, we're creating a mechanism for our users to measure potential risk based off our techincal analysis.
 This will allow users to make educated and well-informed decisions by evaluating historical price movements from the data provided in a user-friendly application.
@@ -32,6 +33,7 @@ This will allow users to make educated and well-informed decisions by evaluating
 
 
 **Navigating the Website**
+
 1) Enter the link to the website in your preffered web browser.
 ![markdown-image](crypto1.PNG)
 
@@ -40,10 +42,12 @@ This will allow users to make educated and well-informed decisions by evaluating
 ![markdown-image](crypto2.PNG)
 
 **Steps of Development**
+
 1) Using Coin API and pandas-datareader(Yahoo! Finance), we were able to collect historical data on cryptocurrencies and the S&P500.
 2) Data was converted to dataframes and cleaned prior to being used for analysis.
 2) Calculated the variance, covariance, and beta of each cryptocurrency using Bitcoin as a market proxy for cryptocurrency as well as comparing the coins to the S&P500.
 4) Utilized interactive plots and visuals to compare and contrast the various calculated metrics conducted.
+5) Front end web development team learned Flask and Heroku to deploy live website.
 
 **Installation Guide**
 
@@ -60,6 +64,10 @@ Author: Michael Bejan, Nathan Duft, Leo Harada, Raymond Hurst, Ahmed Mohamed
 Email: mbejan@scu.edu
 
 LinkedIn: https://www.linkedin.com/in/michael-bejan-b52496109/
+
+Email: leotharada@gmail.com
+
+LinkedIn: https://www.linkedin.com/in/leo-harada-516248106/
 
 **License**
 
