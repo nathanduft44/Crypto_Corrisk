@@ -61,6 +61,7 @@ Commands: "code .", "jupyter lab", "jupyter notebook"
    2. activate your virtualenv.
    3. run: pip install -r requirements.txt in your shell.
    4. deploy: python main.py
+
 **Contributors**
 
 Author: Michael Bejan, Nathan Duft, Leo Harada, Raymond Hurst, Ahmed Mohamed
