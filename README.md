@@ -2,6 +2,8 @@
 
 ![markdown-image](crypto.PNG)
 
+https://crypto-corrisk.herokuapp.com/
+
 **Overview**
 
 Crypto currencies have recently been in the spotlight in today's financial world. We're seeing major adoption and capital investments pouring into the markets from financial institutions and retail investors all over the world. Since Bitcoin's creation in 2009, there are now a whopping 11,257 cryptocurrencies in the market!
@@ -36,6 +38,8 @@ at on-chain data. A critical next step will be implementing a blog for people to
 
 
 **Navigating the Website**
+
+https://crypto-corrisk.herokuapp.com/
 
 1) Enter the link to the website in your preffered web browser.
 ![markdown-image](crypto1.PNG)
