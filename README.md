@@ -4,8 +4,8 @@
 
 **Overview**
 
-Crypto currencies have recently been in the spotlight in today's financial world. We're seeing major adoption and capital investments pooring into the markets from financial institutions and retail investors all over the world. Since Bitcoin's creation in 2009, there are now a whopping 11,257 cryptocurrencies in the market!
-So far we have a website and some unique quantitative analysis. With the push of retail investors in the space and amount of speculation and noise with getting information we are providing a place for people to better understand the risk assiociated in crypto.
+Crypto currencies have recently been in the spotlight in today's financial world. We're seeing major adoption and capital investments pouring into the markets from financial institutions and retail investors all over the world. Since Bitcoin's creation in 2009, there are now a whopping 11,257 cryptocurrencies in the market!
+So far we have a website that displays some unique quantitative analysis. There are a lot of uniformed retail investors in the space, and they often allow speculation and market noise to dominate their understanding of market events. We are providing a place for people to better understand the risk assiociated in crypto, while still appreciating the potential returns.
 
 **Objective**
 
@@ -80,6 +80,10 @@ LinkedIn: https://www.linkedin.com/in/leo-harada-516248106/
 Email: nathan.duft@gmail.com
 
 LinkedIn: https://www.linkedin.com/in/nathan-duft-b746691a6/
+
+Email: rhurst1125@berkeley.edu
+
+LinkedIn: https://www.linkedin.com/in/raymond-hurst-612037127/
 
 **License**
 
