@@ -56,7 +56,11 @@ This will allow users to make educated and well-informed decisions by evaluating
 3) Navigate to the "Crypto_Corrisk" folder and open either VS Code, Jupyter Lab, or Jupyter Notebook using one of the following commands
 Commands: "code .", "jupyter lab", "jupyter notebook"
 4) Once in your desired environment, you can navigat through the various worksheets to see how data was collected, cleaned, stored, and used for analysis/forecasting.
-    
+5) To deploy local host with Flask:
+   1. cd to the directory where requirements.txt is located.
+   2. activate your virtualenv.
+   3. run: pip install -r requirements.txt in your shell.
+   4. deploy: python main.py
 **Contributors**
 
 Author: Michael Bejan, Nathan Duft, Leo Harada, Raymond Hurst, Ahmed Mohamed
