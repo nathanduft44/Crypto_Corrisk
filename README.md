@@ -89,6 +89,10 @@ Email: rhurst1125@berkeley.edu
 
 LinkedIn: https://www.linkedin.com/in/raymond-hurst-612037127/
 
+Email: ahmedelkarar9@gmail.com
+
+LinkedIn: https://www.linkedin.com/in/ahmed-mohamed-183814161/
+
 **License**
 
                 GNU GENERAL PUBLIC LICENSE
